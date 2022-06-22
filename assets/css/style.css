@@ -1,11 +1,19 @@
 /*--------------------------------------------------------------
 # Summary
 
-1- Accueil
-2- À propos
-3- Articles
-4- L'entreprise & Moi
-5- Me contacter 
+1- General
+2- Back to top button
+3- Header
+4- Navigation Menu
+5- Hero Section
+6- Sections General
+7- About
+8- Skills
+9- Resume
+10- Company
+11- Articles
+12- Contact
+13- Breadcrumbs
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -21,7 +29,6 @@ body {
 main {
   margin-left: 300px;
   scroll-snap-type: y proximity;
-  z-index: 2;
 }
 
 a {
@@ -182,6 +189,9 @@ h1, h2, h3, h4, h5, h6, .user-select-none {
 .mobile-nav-active #header {
   left: 0;
 }
+.mobile-nav-active .back-to-top {
+  pointer-events: none;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -234,7 +244,7 @@ h1, h2, h3, h4, h5, h6, .user-select-none {
   }
 }
 @media (min-width: 500px) and (max-width: 1023px) {
-  #hero {
+  #hero, #hero:before {
     height: max(300px, 10vh);
   }
   #hero h1 {
@@ -249,7 +259,7 @@ h1, h2, h3, h4, h5, h6, .user-select-none {
 }
 
 @media (max-width: 499px) {
-  #hero {
+  #hero, #hero:before {
     height: 250px;
   }
   #hero h1 {
@@ -366,18 +376,6 @@ section {
 
 .social-links .cv i {
   font-size: 20px;
-}
-
-@media (max-width: 1300px) {
-  .social-links .cv i {
-    display: none;
-  }
-}
-
-@media (max-width: 1023px) {
-  .social-links .cv {
-    width: 160px; 
-  }
 }
 
 /*--------------------------------------------------------------
@@ -560,7 +558,12 @@ section {
   }
 
   .article-title {
-    width: max(60px, 10vw);    
+    width: max(60px, 10vw); 
+    font-size: 18px; 
+  }
+
+  .article-title-mobile, .article-date-mobile {
+    display: none;
   }
 
   .article-item {
@@ -573,12 +576,24 @@ section {
     position: sticky;
     align-self: flex-start;
     top: 20px;
+    width: 120px;
     overflow-x: hidden;
     overflow-y: auto;  
   }
 
   .article-title {
-    width: max(50px, 8vw);    
+    display: none;
+  }
+
+  .article-title-mobile {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .article-date-mobile {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    width: 60px;
   }
 
   .article-item {
@@ -596,7 +611,17 @@ section {
   }
 
   .article-title {
-    width: max(50px, 8vw);    
+    display: none;
+  }
+
+  .article-title-mobile {
+    font-size: 50px;
+
+  }
+
+  .article-date-mobile {
+    font-size: 13px;
+    width: 80px;
   }
 
   .article-item {
@@ -605,7 +630,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Me contacter
+# Contact
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
