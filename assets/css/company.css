@@ -1,0 +1,240 @@
+/*--------------------------------------------------------------
+Company
+--------------------------------------------------------------*/
+.history .section-title p a {
+    font-weight: bold;
+}
+
+.history .section-title {
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.squad .section-title p a {
+    font-weight: bold;
+}
+
+.squad .section-title {
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+/*--------------------------------------------------------------
+Organization chart
+--------------------------------------------------------------*/
+.tree-horizontal,
+.tree-vertical {
+    margin-top: 30px;
+}
+
+.tree, .tree ul, .tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.tree, .tree ul {
+    display: table;
+}
+
+.tree ul {
+    width: 100%;
+}
+
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+
+.tree li:before {
+    outline: solid 1px #c90a14;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tree li:first-child:before {
+    left: 50%;
+}
+
+.tree li:last-child:before {
+    right: 50%;
+}
+
+.tree span {
+    border: solid .1em #c90a14;
+    border-radius: .2em;
+    display: inline-block;
+    margin: 0 .2em .5em;
+    padding: .2em .5em;
+    position: relative;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+
+.tree ul:before,
+.tree span:before {
+    outline: solid 1px #c90a14;
+    content: "";
+    height: .5em;
+    left: 50%;
+    position: absolute;
+}
+
+.tree ul:before {
+    top: -.5em;
+}
+
+.tree span:before {
+    top: -.55em;
+}
+  
+/* The root node doesn't connect upwards */
+.tree > li {margin-top: 0;}
+.tree > li:before,
+.tree > li:after,
+.tree > li > span:before {
+    outline: none;
+}
+
+.info-tree {
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .tree-horizontal {
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .tree-horizontal .tree .tree-title {
+        font-size: 20px;
+        background-color: #c90a14;
+        color: #292727;
+    }
+
+    .tree-horizontal .tree span {
+        font-size: 16px;
+        border: solid 2px #c90a14;
+    }
+
+    .tree-vertical {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .tree-horizontal {
+        display: none;
+    }
+
+    .tree-vertical {
+        max-width: 50%;
+        position: relative;
+        text-align: center;
+    }
+
+    .tree-vertical .tree .tree-title {
+        font-size: 16px;
+        background-color: #c90a14;
+        color: #292727;
+    }
+
+    .tree-vertical .tree span {
+        font-size: 14px;
+        border: solid 2px #c90a14;
+    }
+}
+  
+@media (max-width: 499px) {
+    .tree-horizontal {
+        display: none;
+    }
+
+    .tree-vertical {
+        max-width: 30%;
+        position: relative;
+        text-align: center;
+    }
+
+    .tree-vertical .tree .tree-title {
+        font-size: 16px;        
+        background-color: #c90a14;
+        color: #292727;
+    }
+
+    .tree-vertical .tree span {
+        font-size: 12px;
+        border: solid 2px #c90a14;
+    }
+}
+
+
+/*--------------------------------------------------------------
+Role description
+--------------------------------------------------------------*/
+
+.role-description {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.img-sinistre-squad,
+.role-description ul {
+    margin-top: 15px;
+}
+
+.sinistre-logo {
+    max-width: max(60%, 200px);
+}
+
+@media (min-width: 800px) {
+    .role-description-left {
+        margin-right: 10px;
+    }
+    
+    .role-description-right {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .role .role-title {
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .img-sinistre-squad {
+        display: none;
+    }
+
+    .role .role-title {
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+}
+  
+@media (max-width: 499px) {
+    .img-sinistre-squad {
+        display: none;
+    }
+
+    .role .role-title {
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+}

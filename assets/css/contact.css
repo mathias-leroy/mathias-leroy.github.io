@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+Contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .section-title {
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.contact .info {
+  padding-top: 30px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #c90a14;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fcdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #180505;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #c90a14;
+}
+  
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #c90a14;
+  color: #fff;
+}
+  
+@media (min-width: 1280px) {
+  .contact .info {
+    width: 95%;
+    flex-direction: row;
+  }
+}
+  
+@media (min-width: 500px) and (max-width: 1279px) {
+  .contact .info {
+    width: min(700px, 85vw);
+    flex-direction: column;
+    margin-left: 50px;
+  }
+}
+  
+@media (max-width: 499px) {
+  .contact .info {
+    width: min(700px, 85vw);
+    flex-direction: column;
+    margin-left: 50px;
+  }
+}
