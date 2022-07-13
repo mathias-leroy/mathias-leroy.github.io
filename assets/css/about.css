@@ -77,12 +77,6 @@ About
     font-size: 20px;
 }
 
-@media (min-width: 500px) and (max-width: 700px) {
-    .about .section-title {
-      margin-left: 100px;
-    }
-}
-
 @media (max-width: 499px) {
     .about .profile-and-links img {
       margin-right: 50px;
@@ -187,8 +181,4 @@ Resume
     top: 0;
     background: #fff;
     border: 2px solid #7c060c;
-}
-
-.resume .section-title {
-    margin-left: 50px;
 }

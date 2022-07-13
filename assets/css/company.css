@@ -5,19 +5,10 @@ Company
     font-weight: bold;
 }
 
-.history .section-title {
-    margin-left: 50px;
-    margin-right: 40px;
-}
-
 .squad .section-title p a {
     font-weight: bold;
 }
 
-.squad .section-title {
-    margin-left: 50px;
-    margin-right: 40px;
-}
 
 /*--------------------------------------------------------------
 Organization chart
@@ -80,23 +71,6 @@ Organization chart
     font-weight: bold;
     font-family: "Raleway", sans-serif;
 }
-
-.tree ul:before,
-.tree span:before {
-    outline: solid 1px #c90a14;
-    content: "";
-    height: .5em;
-    left: 50%;
-    position: absolute;
-}
-
-.tree ul:before {
-    top: -.5em;
-}
-
-.tree span:before {
-    top: -.55em;
-}
   
 /* The root node doesn't connect upwards */
 .tree > li {margin-top: 0;}
@@ -127,6 +101,24 @@ Organization chart
         font-size: 16px;
         border: solid 2px #c90a14;
     }
+
+    .tree ul:before,
+    .tree span:before {
+        outline: solid 1px #c90a14;
+        content: "";
+        left: 50%;
+        position: absolute;
+    }
+
+    .tree ul:before {
+        top: -.6em;
+        height: .5em;
+    }
+
+    .tree span:before {
+        top: -.6em;
+        height: .5em;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 799px) {
@@ -145,6 +137,24 @@ Organization chart
     .tree-horizontal .tree span {
         font-size: 12px;
         border: solid 2px #c90a14;
+    }
+
+    .tree ul:before,
+    .tree span:before {
+        outline: solid 1px #c90a14;
+        content: "";
+        left: 50%;
+        position: absolute;
+    }
+
+    .tree ul:before {
+        top: -.5em;
+        height: .5em;
+    }
+
+    .tree span:before {
+        top: -.75em;
+        height: .6em;
     }
 }
   
@@ -165,13 +175,30 @@ Organization chart
         font-size: 10px;
         border: solid 2px #c90a14;
     }
+
+    .tree ul:before,
+    .tree span:before {
+        outline: solid 1px #c90a14;
+        content: "";
+        left: 50%;
+        position: absolute;
+    }
+
+    .tree ul:before {
+        top: -.4em;
+        height: .4em;
+    }
+
+    .tree span:before {
+        top: -1.05em;
+        height: 0.95em;
+    }
 }
 
 
 /*--------------------------------------------------------------
 Role description
 --------------------------------------------------------------*/
-
 .role-description {
     display:flex;
     flex-direction: row;
