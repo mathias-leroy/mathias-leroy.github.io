@@ -119,8 +119,8 @@ Organization chart
 
     .tree-horizontal .tree .tree-title {
         font-size: 20px;
-        background-color: #c90a14;
         color: #292727;
+        border: solid 3px #c90a14;
     }
 
     .tree-horizontal .tree span {
@@ -146,8 +146,8 @@ Organization chart
 
     .tree-vertical .tree .tree-title {
         font-size: 16px;
-        background-color: #c90a14;
         color: #292727;
+        border: solid 3px #c90a14;
     }
 
     .tree-vertical .tree span {
@@ -168,9 +168,9 @@ Organization chart
     }
 
     .tree-vertical .tree .tree-title {
-        font-size: 16px;        
-        background-color: #c90a14;
+        font-size: 16px;
         color: #292727;
+        border: solid 3px #c90a14;
     }
 
     .tree-vertical .tree span {
