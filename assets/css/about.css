@@ -42,7 +42,7 @@ About
     margin-bottom: 0;
 }
   
-.social-links a {
+.about .social-links a {
     display: inline-block;
     background: #c2c0c0;
     color: #2d2c2c;
@@ -54,22 +54,25 @@ About
     transition: 0.2s;
 }
   
-.social-links a:hover {
+.about .social-links a:hover {
     background: #c90a14;
     color: #fdf4f4;
     text-decoration: none;
 }
-.social-links .linkedin, .social-links .github {
+
+.about .social-links .linkedin, 
+.about .social-links .github {
     font-size: 20px;
     width: 36px;
     height: 36px;
 }
   
-.social-links .linkedin i, .social-links .github i {
+.about .social-links .linkedin i, 
+.about .social-links .github i {
     font-size: 20px;
 }
   
-.social-links .cv{
+.about .social-links .cv{
     width: 220px;
     height: 36px;
     font-weight: bold;
@@ -78,7 +81,7 @@ About
     justify-content: center;
 }
   
-.social-links .cv i {
+.about .social-links .cv i {
     font-size: 20px;
 }
 
