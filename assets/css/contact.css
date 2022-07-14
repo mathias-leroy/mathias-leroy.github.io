@@ -28,7 +28,7 @@ Contact
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #180505;
+  color: #2d2c2c;
 }
 
 .contact .info p {
@@ -40,7 +40,7 @@ Contact
   
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
   background: #c90a14;
-  color: #fff;
+  color: #fdf4f4;
 }
   
 @media (min-width: 1280px) {

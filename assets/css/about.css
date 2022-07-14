@@ -44,7 +44,7 @@ About
   
 .social-links a {
     display: inline-block;
-    background: #c0c1c2;
+    background: #c2c0c0;
     color: #2d2c2c;
     line-height: 1;
     padding: 8px 0;
@@ -56,7 +56,7 @@ About
   
 .social-links a:hover {
     background: #c90a14;
-    color: #fff;
+    color: #fdf4f4;
     text-decoration: none;
 }
 .social-links .linkedin, .social-links .github {
@@ -106,7 +106,7 @@ Skills
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #180505;
+    color: #2d2c2c;
 }
 
 .skills .progress .skill .val {
@@ -115,7 +115,7 @@ Skills
 }
 
 .skills .progress-bar-wrap {
-    background: #c0c1c2;
+    background: #c2c0c0;
     height: 10px;
 }
 
@@ -138,7 +138,7 @@ Resume
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #180505;
+    color: #2d2c2c;
 }
 
 .resume .resume-item {
@@ -155,7 +155,7 @@ Resume
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #180505;
+    color: #2d2c2c;
     margin-bottom: 10px;
 }
 
@@ -189,6 +189,18 @@ Resume
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #fff;
+    background: #fdf4f4;
     border: 2px solid #7c060c;
+}
+
+@media (min-width: 550px) {
+    .resume .resume-item .mobile-quality {
+      display: none;
+    }
+}
+
+@media (max-width: 549px) {
+    .resume .resume-item .desktop-quality {
+        display: none;
+    }
 }

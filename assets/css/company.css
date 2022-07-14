@@ -210,7 +210,7 @@ Role description
     display:flex;
     flex-direction: row;
     margin-bottom: 30px;
-    align-items: center;
+    align-items: top;
 }
 
 .role .role-description p {
