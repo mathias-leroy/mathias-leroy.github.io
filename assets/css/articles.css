@@ -14,12 +14,18 @@ Articles
 
 .article .article-title {
     font-style: italic;
+    text-align: center;
+}
+
+.article-item .img-articles {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .article-number {
     font-family: "Poppins", sans-serif;    
     margin-right: 10px;
-    padding-top: 10px;
 }
   
 @media (min-width: 1200px) {
@@ -34,17 +40,20 @@ Articles
   .article-number { 
     font-size: 40px; 
     width: 50px;
+    margin-top: 20px;
   }
 
   .article-item {
     width: clamp(80vw, 650px, 85vw);
     padding-left: 1.5rem !important;
+    margin-bottom: 40px;
   }
 
   .article .article-item p {
     margin: 0 15px 0 15px;
     padding: 20px;
     position: relative;
+    text-align: justify;
   }
 
   .article-item .img-equipes {
@@ -64,13 +73,10 @@ Articles
   .article .article-item {
     box-sizing: content-box;
     text-align: center;
-    background: #fff;
     position: relative;
     margin-bottom: 35px;
-    border-radius: 6px;
     padding-top: 10px;
     padding-bottom: 20px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
   }
 
   .article-sticky {
@@ -86,17 +92,20 @@ Articles
   .article-number {
     font-size: 40px;
     width: 50px;
+    margin-top: 33px;
   }
 
   .article-item {
     width: clamp(90vw, 800px, 100vw);
     padding-left: 1rem !important;
+    margin-bottom: 40px;
   }
 
   .article .article-item p {
     margin: 0 15px 0 15px;
     padding: 20px;
     position: relative;
+    text-align: justify;
   }
 
   .article-item .img-equipes {
@@ -134,15 +143,18 @@ Articles
   .article-number {
     font-size: 40px;
     width: 40px;
+    margin-top: 33px;
   }
 
   .article-item {
     width: clamp(70vw, 650px, 75vw);
+    margin-bottom: 40px;
   }
 
   .article .article-item p {
     margin: 0;
     position: relative;
+    text-align: justify;
   }
 
   .article-item .img-equipes {

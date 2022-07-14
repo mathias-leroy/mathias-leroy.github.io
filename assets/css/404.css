@@ -3,28 +3,20 @@ body, html{
     box-sizing: border-box;
 }
 
+.row {
+    text-align: center;
+}
+
 .row a {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1px;
-
+    text-decoration: none;
 }
 
-.page404 { 
-    padding: 40px 0 0 0;
+.page404 {
     background:#fff;
     font-family: "Raleway", sans-serif;
-}
-
-.page404_bg{
-    background-repeat: no-repeat;
-    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 400px;
-    width: 100%;
-    background-position: center;
-}
-
-.page404_bg h1 {
-    font-size: 80px;
+    padding: 40px 0 0 0;
 }
 
 .link_404 {      
@@ -45,6 +37,10 @@ body, html{
 }
 
 @media (min-width: 1200px) {
+    .page404_bg_area h1 {
+        font-size: 100px;
+    }
+
     .row h3 {
         font-size:35px;
     }
@@ -52,24 +48,53 @@ body, html{
     .row p {
         font-size: 20px;
     }
+
+    .page404_bg_area {
+        background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+        background-repeat: no-repeat;
+        height: 500px;
+        background-position: center;
+    }
 }
     
 @media (min-width: 500px) and (max-width: 1199px) {
+    .page404_bg_area h1 {
+        font-size: 80px;
+    }
+
     .row h3 {
         font-size:30px;
     }
 
     .row p {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .page404_bg_area {
+        background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center;
     }
 }
     
 @media (max-width: 499px) {
+    .page404_bg_area h1 {
+        font-size: 60px;
+    }
+
     .row h3 {
         font-size: 28px;
     }
 
     .row p {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    .page404_bg_area {
+        background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center;
     }
 }

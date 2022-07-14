@@ -1,8 +1,16 @@
 /*--------------------------------------------------------------
 Company
 --------------------------------------------------------------*/
+.history .section-title p {
+ text-align: justify;
+}
+
 .history .section-title p a {
     font-weight: bold;
+}
+
+.squad .section-title p {
+    text-align: justify;
 }
 
 .squad .section-title p a {
@@ -13,8 +21,7 @@ Company
 /*--------------------------------------------------------------
 Organization chart
 --------------------------------------------------------------*/
-.tree-horizontal,
-.tree-vertical {
+.tree-horizontal {
     margin-top: 30px;
 }
 
@@ -204,6 +211,14 @@ Role description
     flex-direction: row;
     margin-bottom: 30px;
     align-items: center;
+}
+
+.role .role-description p {
+    text-align: justify;
+}
+
+.role .section-title p {
+    text-align: justify;
 }
 
 .img-sinistre-squad,

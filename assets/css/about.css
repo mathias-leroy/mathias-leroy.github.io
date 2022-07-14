@@ -3,12 +3,17 @@ About
 --------------------------------------------------------------*/
 .about .section-title {
     margin-left: 50px;
+    text-align: justify;
 }
 
 .about .content h3 {
     font-weight: 700;
     font-size: 26px;
     color: #c90a14;
+}
+
+.about .content p {
+    text-align: justify;
 }
 
 .about .content ul {
@@ -124,6 +129,10 @@ Skills
 /*--------------------------------------------------------------
 Resume
 --------------------------------------------------------------*/
+.resume .section-title{
+    text-align: justify;
+}
+
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -137,6 +146,7 @@ Resume
     margin-top: -2px;
     border-left: 2px solid #7c060c;
     position: relative;
+    text-align: justify;
 }
 
 .resume .resume-item h4 {
