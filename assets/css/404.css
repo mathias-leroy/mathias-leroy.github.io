@@ -1,68 +1,75 @@
-
-html {
-    height: 100%;
+body, html{
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body {  
-    height: 100%;
-    background: url("https://wallpapercave.com/wp/6SLzBEY.jpg") no-repeat left top;
-    background-size: cover;  
-    overflow: hidden;   
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+.row a {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+
 }
 
-.text h1{
-    color: #011718;
-    margin-top: -200px;
-    font-size: 15em;
-    text-align: center;
-    text-shadow: 
-        -5px 5px 0px rgba(0,0,0,0.7), 
-        -10px 10px 0px rgba(0,0,0,0.4), 
-        -15px 15px 0px rgba(0,0,0,0.2);
-    font-weight: bold;
+.page404 { 
+    padding: 40px 0 0 0;
+    background:#fff;
+    font-family: "Raleway", sans-serif;
 }
 
-.text h2{
-    color: black;
-    font-size: 5em;
-    text-shadow: -5px 5px 0px rgba(0,0,0,0.3);
-    text-align: center;
-    margin-top: -150px;
-    font-weight: bold;
-}
-.text h3{
-    color: black;
-    margin-left: 30px;
-    font-size: 2em;
-    text-shadow: -5px 5px 0px rgba(0,0,0,0.2);
-    margin-top: -40px;
-    font-weight: bold;
-}
-
-.torch {
-    margin: -150px 0 0 -150px;
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 0 0 9999em #000000f7;
-    opacity: 1;
-    border-radius: 50%;
-    position: fixed;
-    background: rgba(0,0,0,0.3);
-}
-
-.torch:after {
-    content: '';
-    display: block;
-    border-radius: 50%;
+.page404_bg{
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
     width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    box-shadow: 
-        inset 0 0 40px 2px #000,
-        0 0 20px 4px rgba(13,13,10,0.2);  
+    background-position: center;
+}
+
+.page404_bg h1 {
+    font-size: 80px;
+}
+
+.link_404 {      
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #c90a14;
+    margin: 20px 0 0 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top:-50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (min-width: 1200px) {
+    .row h3 {
+        font-size:35px;
+    }
+
+    .row p {
+        font-size: 20px;
+    }
+}
+    
+@media (min-width: 500px) and (max-width: 1199px) {
+    .row h3 {
+        font-size:30px;
+    }
+
+    .row p {
+        font-size: 20px;
+    }
+}
+    
+@media (max-width: 499px) {
+    .row h3 {
+        font-size: 28px;
+    }
+
+    .row p {
+        font-size: 18px;
+    }
 }
