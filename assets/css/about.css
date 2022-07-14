@@ -71,19 +71,6 @@ About
 .about .social-links .github i {
     font-size: 20px;
 }
-  
-.about .social-links .cv{
-    width: 220px;
-    height: 36px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.about .social-links .cv i {
-    font-size: 20px;
-}
 
 @media (max-width: 499px) {
     .about .profile-and-links img {
@@ -134,6 +121,22 @@ Resume
 --------------------------------------------------------------*/
 .resume .section-title{
     text-align: justify;
+}
+
+.resume .cv{
+    width: 220px;
+    height: 36px;
+    background: #c2c0c0;
+    border-radius: 10px;
+    color: #2d2c2c;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.resume .cv i {
+    font-size: 20px;
 }
 
 .resume .resume-title {
