@@ -61,6 +61,10 @@ body, html{
         height: 500px;
         background-position: center;
     }
+
+    .link_404 {
+        display: none;
+    }
 }
     
 @media (min-width: 700px) and (max-width: 1199px) {
