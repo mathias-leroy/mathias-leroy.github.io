@@ -3,77 +3,112 @@ Hero Section
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background: url("../img/hero-bg.png") top center;
     z-index: 99;
     background-size: cover;
+    background-attachment:fixed;
 }
 
 #hero:before {
     content: "";
     background: rgba(24, 5, 5, 0.3);
     position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0 0 0 0;
     z-index: 1;
 }
 
-#hero .hero-container {
+#hero .hero-section .hero-container {
     position: relative;
     z-index: 2;
     min-width: 300px;
 }
 
-#hero h1 {
+#hero .hero-section {
+    margin-top: 250px;
+}
+
+#hero .hero-section h1 {
     margin: 0 0 10px 0;
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: #fff;
+    color: #fffbfb;
 }
 
-#hero p {
-    color: #fff;
+#hero .hero-section p {
+    color: #fffbfb;
     margin-bottom: 50px;
     font-size: 26px;
     font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
-    color: #fff;
+#hero .hero-section p span {
+    color: #fffbfb;
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid #c90a14;
 }
 
-@media (min-width: 1024px) {
-    #hero {
-        background-attachment: fixed;
+@media (min-width: 1200px) {
+    #hero .hero-container {
+        inset: 100px 10px 0 10px;
     }
-}
 
-@media (min-width: 500px) and (max-width: 1023px) {
-    #hero h1 {
+    #hero .hero-section h1 {
         font-size: clamp(45px, 5vw, 50px);
         line-height: 36px;
     }
-    #hero h2 {
+
+    #hero .hero-section h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
     }
 }
 
-@media (max-width: 499px) {
-    #hero h1 {
+@media (min-width: 500px) and (max-width: 1199px) {
+    #hero .hero-container {
+        inset: 60px 10px 0 10px;
+    }
+
+    #hero .hero-section h1 {
+        font-size: clamp(45px, 5vw, 50px);
+        line-height: 36px;
+    }
+
+    #hero .hero-section h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+    #hero .hero-container {
+        inset: auto 10px 0 10px;
+    }
+
+    #hero .hero-section h1 {
         font-size: clamp(40px, 5vw, 45px);
         line-height: 36px;
     }
 
-    #hero h2 {
+    #hero .hero-section h2 {
         font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 299px) {
+    #hero .hero-section h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    #hero .hero-section h2 {
+        font-size: 10px;
         line-height: 24px;
         margin-bottom: 30px;
     }

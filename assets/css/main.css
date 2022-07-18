@@ -1,10 +1,14 @@
 /*--------------------------------------------------------------
 General
 --------------------------------------------------------------*/
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #292727;
-  margin: 0;
   overflow-x: hidden;
 }
   
@@ -61,13 +65,13 @@ Back to top button
 
 .back-to-top i {
   font-size: 28px;
-  color: #fdf4f4;
+  color: #fffbfb;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #fc0d1a;
-  color: #fdf4f4;
+  color: #fffbfb;
 }
 
 .back-to-top.active {
@@ -111,7 +115,7 @@ Header
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fdf4f4;
+  color: #fffbfb;
   text-decoration: none;
 }
   
@@ -133,7 +137,7 @@ Header
 
 #header .profile .social-links a:hover {
   background: #c90a14;
-  color: #fdf4f4;
+  color: #fffbfb;
   text-decoration: none;
 }
   
@@ -152,7 +156,7 @@ Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 40px 0 0 10px;
   z-index: 1;
 }
 
@@ -185,7 +189,7 @@ Navigation Menu
 
 .nav-menu a:hover, .nav-menu .current, .nav-menu .current:focus, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #fdf4f4;
+  color: #fffbfb;
 }
 
 .nav-menu a:hover i, .nav-menu .current i, .nav-menu .current:focus i, .nav-menu li:hover > a i {
@@ -203,7 +207,7 @@ Navigation Menu
   transition: all 0.4s;
   outline: none !important;
   background-color: #c90a14;
-  color: #fdf4f4;
+  color: #fffbfb;
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -288,7 +292,7 @@ Footer
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #fdf4f4;
+  color: #fffbfb;
   font-size: 14px;
   position: fixed;
   left: 0;
