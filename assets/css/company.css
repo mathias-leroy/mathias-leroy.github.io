@@ -226,6 +226,10 @@ Role description
     margin-top: 15px;
 }
 
+.role-description-right {
+    text-align: justify;
+}
+
 .sinistre-logo {
     max-width: max(60%, 200px);
 }

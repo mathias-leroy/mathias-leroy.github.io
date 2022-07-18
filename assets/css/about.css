@@ -199,14 +199,6 @@ Resume
     border: 2px solid #7c060c;
 }
 
-@media (min-width: 550px) {
-    .resume .resume-item .mobile-quality {
-      display: none;
-    }
-}
-
-@media (max-width: 549px) {
-    .resume .resume-item .desktop-quality {
-        display: none;
-    }
+.resume .resume-item .resume-quality {
+    text-align: left;
 }
