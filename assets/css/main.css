@@ -18,8 +18,9 @@ a {
   text-decoration: none;
 }
 
-a::selection, p::selection, strong::selection, li::selection,
-br::selection, span::selection, div::selection, img::selection {
+a::selection, p::selection, strong::selection, li::selection, br::selection, 
+span::selection, div::selection, img::selection, h1::selection, h2::selection, 
+h3::selection, h4::selection, h5::selection, h6::selection {
   background-color: #fcdfdf;
 }
 
