@@ -232,6 +232,7 @@ Role description
 
 .role-description-right ul li {
     padding-bottom: 8px;
+    list-style-type: none;
 }
 
 .role-description-right ul li::before {

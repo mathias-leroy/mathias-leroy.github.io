@@ -751,6 +751,11 @@ Articles Navigation
   padding-block: 10px;
 }
 
+.article-navigation ul li,
+.article-navigation-mobile ul li {
+  list-style-type: none;
+}
+
 .article-navigation ul li .nav-article {
   font-weight: bold;
   display: inline-block;
