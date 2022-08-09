@@ -259,8 +259,7 @@ Navigation Menu
 Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  padding-right: 20px;
+  padding: 60px 0 0 0;
 }
 
 .section-bg {

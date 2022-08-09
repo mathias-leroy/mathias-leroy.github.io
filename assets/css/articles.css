@@ -38,10 +38,11 @@ Articles (Home)
   font-weight: bold;
   display: flex;
   height: 40px;
-  max-width: 180px;
+  width: 180px;
   margin-top: auto;
   align-items: center;
   justify-content: center;
+  margin-inline: auto;
 }
 
 .btn-articles:hover {
@@ -52,13 +53,19 @@ Articles (Home)
 
 @media (min-width: 1200px) {
   .card {
-    width: 26vh;
+    width: 30vh;
   }
 }
   
-@media (min-width: 500px) and (max-width: 1199px) {
+@media (min-width: 800px) and (max-width: 1199px) {
   .card {
-    width: 80%;
+    width: max(30vh, 40%);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+  .card {
+    width: 90%;
   }
 }
   
@@ -76,24 +83,18 @@ Articles
 }
 
 .article .container {
-  margin-inline: auto;
+  margin-right: 0;
   justify-content: center;
   max-width: 95%;
 }
 
-.article .container .article-container {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-}
-
-.article .article-container .article-item {
+.article .article-item {
   padding: 0;
   margin-inline: auto;
   justify-content: center;
 }
 
-.article .article-container .article-item .quote-icon-left {
+.article .article-item .quote-icon-left {
   color: #c90a14;
   font-size: 50px;
 }
