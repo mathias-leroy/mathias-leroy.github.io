@@ -5,6 +5,12 @@ Contact
   padding-bottom: 130px;
 }
 
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contact .info {
   padding-top: 30px;
 }
@@ -43,18 +49,26 @@ Contact
   color: #fffbfb;
 }
   
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .contact .info {
     width: 95%;
     flex-direction: row;
   }
+
+  .contact .container {
+    max-width: 85%;
+  }
 }
   
-@media (min-width: 500px) and (max-width: 1279px) {
+@media (min-width: 500px) and (max-width: 1199px) {
   .contact .info {
     width: min(700px, 85vw);
     flex-direction: column;
     margin-left: 50px;
+  }
+
+  .contact .container {
+    max-width: 85%;
   }
 }
   
@@ -63,5 +77,9 @@ Contact
     width: min(700px, 85vw);
     flex-direction: column;
     margin-left: 50px;
+  }
+
+  .contact .container {
+    max-width: 90%;
   }
 }

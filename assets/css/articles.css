@@ -13,6 +13,7 @@ Articles (Home)
 .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .card-text {
@@ -26,8 +27,16 @@ Articles (Home)
 }
 
 .card-title {
+  display: flex;
   color: #2d2c2c;
   font-weight: bold;
+  justify-content: center;
+}
+
+.card-date {
+  display: flex;
+  color: #2d2c2c;
+  justify-content: center;
 }
 
 .btn-articles {
@@ -79,17 +88,17 @@ Articles (Home)
 Articles
 --------------------------------------------------------------*/ 
 .article {
-  margin: 0;
+  margin: 0 0 40px 0;
 }
 
 .article .container {
-  margin-right: 0;
+  display: flex;
   justify-content: center;
-  max-width: 95%;
 }
 
-.article .article-item {
-  padding: 0;
+.article .container .article-item {
+  display: flex;
+  flex-direction: column;
   margin-inline: auto;
   justify-content: center;
 }
@@ -97,9 +106,6 @@ Articles
 .article .article-item .quote-icon-left {
   color: #c90a14;
   font-size: 50px;
-}
-
-.article .article-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
@@ -762,6 +768,7 @@ Articles Navigation
   display: inline-block;
   position: relative;
   color: #2d2c2c;
+  font-size: 16px;
 }
 
 .article-navigation ul li .nav-article:after {
@@ -782,15 +789,26 @@ Articles Navigation
   transform-origin: bottom left;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .article-navigation-mobile {
     display: none;
   }
+
+  .article .container {
+    flex-direction: row;
+    max-width: 85%;
+    gap: 20px;
+  }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .article-navigation {
     display: none;
+  }
+
+  .article .container {
+    flex-direction: column;
+    max-width: 90%;
   }
 
   .article-navigation-mobile {
@@ -801,7 +819,7 @@ Articles Navigation
     height: fit-content;
     width: auto;
     margin-bottom: 30px;
-  }
+  }  
 
   /* paramètres de la grille */
   .article-navigation-mobile .nav-title {
@@ -812,8 +830,10 @@ Articles Navigation
   .article-navigation-mobile .nav-article {
     color: #2d2c2c;
     font-weight: bold;
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
   }
-
+  
   .article-navigation-mobile .zero {
     grid-row: 1;
     text-align: center;
@@ -842,10 +862,5 @@ Articles Navigation
   .article-navigation-mobile .five {
     grid-row: 6;
     text-align: center;
-  }
-
-  .article-navigation-mobile .nav-article {
-    text-decoration: underline dotted;
-    text-underline-offset: 6px;
   }
 }

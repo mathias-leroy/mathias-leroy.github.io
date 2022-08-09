@@ -1,4 +1,28 @@
 /*--------------------------------------------------------------
+General
+--------------------------------------------------------------*/
+.about .container,
+.resume .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .about .container,
+    .resume .container {
+        max-width: 85%;
+    }
+}
+  
+@media (max-width: 1199px) {
+    .about .container,
+    .resume .container {
+        max-width: 90%;
+    }
+}
+
+/*--------------------------------------------------------------
 About
 --------------------------------------------------------------*/
 .about .section-title {
@@ -72,10 +96,30 @@ About
     font-size: 20px;
 }
 
+.about .profile-and-links {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .about .profile-and-links img {
+        width: 95%;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .about .profile-and-links img {
+        width: 80%;
+        margin-inline: auto;
+    }
+}
+
 @media (max-width: 499px) {
     .about .profile-and-links img {
-      margin-right: 50px;
-      min-width: 250px;
+        width: 90%;
+        margin-inline: auto;
     }
 }
 
@@ -119,6 +163,10 @@ Skills
 /*--------------------------------------------------------------
 Resume
 --------------------------------------------------------------*/
+.resume .container {
+    padding-bottom: 40px;
+}
+
 .resume .section-title{
     text-align: justify;
 }
