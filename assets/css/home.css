@@ -52,7 +52,8 @@ Hero Section
 
 @media (min-width: 1200px) {
     #hero .hero-container {
-        inset: 100px 10px 0 10px;
+        margin-block: auto;
+        margin-inline: auto;
     }
 
     #hero .hero-section h1 {
@@ -69,7 +70,8 @@ Hero Section
 
 @media (min-width: 500px) and (max-width: 1199px) {
     #hero .hero-container {
-        inset: 60px 10px 0 10px;
+        margin-block: auto;
+        margin-inline: auto;
     }
 
     #hero .hero-section h1 {
@@ -86,7 +88,8 @@ Hero Section
 
 @media (min-width: 300px) and (max-width: 499px) {
     #hero .hero-container {
-        inset: auto 10px 0 10px;
+        margin-block: auto;
+        margin-inline: auto;
     }
 
     #hero .hero-section h1 {
@@ -102,6 +105,11 @@ Hero Section
 }
 
 @media (max-width: 299px) {
+    #hero .hero-container {
+        margin-block: auto;
+        margin-inline: auto;
+    }
+
     #hero .hero-section h1 {
         font-size: 30px;
         line-height: 36px;
