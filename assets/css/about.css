@@ -134,9 +134,15 @@ Resume
     align-items: center;
     justify-content: center;
 }
+
+.resume .cv:hover {
+    background: #c90a14;
+    color: #fffbfb;
+    text-decoration: none;
+}
   
 .resume .cv i {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .resume .resume-title {

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mon Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Popovers on social links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template CSS File -->
+  <link href="../assets/css/articles.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Mobile nav toggle button (open) ======= -->
+  <i class="bx bx-menu mobile-nav-toggle-open d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile user-select-none">
+        <!-- ======= Mobile nav toggle button (close) ======= -->
+        <i class="bx bx-x mobile-nav-toggle-close d-xl-none"></i>
+
+        <img src="../assets/img/profile-img.png" alt="" class="img-fluid rounded-circle mt-5">
+        <h1 class="text-light">Mathias LEROY</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/MathLry/MathLry.github.io" class="GitHub" target=”_blank” rel="noreferrer noopener"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/mathias-hadrien-leroy/" class="linkedin" target=”_blank” rel="noreferrer noopener"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar user-select-none">
+        <ul class="ps-4">
+          <li><a href="../" class="nav-link active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+          <li><a href="../about.html" class="nav-link"><i class="bx bx-user"></i> <span>À propos</span></a></li>
+          <li><a href="../articles" class="current nav-link"><i class='bx bx-news'></i> <span>Articles</span></a></li>
+          <li><a href="../company" class="nav-link"><i class='bx bx-briefcase-alt-2'></i> <span>L'entreprise</span></a></li>
+          <li><a href="../contact" class="nav-link"><i class="bx bx-envelope"></i> <span>Me contacter</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Article ======= -->
+    <section class="article">
+      <div class="container">
+
+        <div class="article-navigation-mobile">
+          <div class="zero">
+            <h5 class="nav-title mb-3 mt-4">Lire les autres articles</h5>
+          </div>
+          <div class="nav-article one">
+            <a class="nav-article" href="./la-méthode-agile">La méthode Agile</a>
+          </div>
+          <div class="nav-article two">
+            <a class="nav-article" href="./time-break">Time Break du 21/06</a>
+          </div>
+          <div class="nav-article three">
+            <a class="nav-article" href="./mes-projets-réalisés">Mes projets réalisés</a>
+          </div>
+          <div class="nav-article four">
+            <a class="nav-article" href="./nouveautés-ES2022">Les nouveautés apportées avec ES2022</a>
+          </div>
+          <div class="nav-article five">
+            <a class="nav-article" href="./bilan">Le stage&nbsp;:&nbsp;mon bilan</a>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row article-container">
+
+          <div class="article-item">
+
+            <div class="article-title mt-4">
+              <h5><strong>Jest vs Vitest</strong></h5>
+              <h6>05/08/22</h6>
+            </div>
+
+            <p>
+              <i class="bx bxs-quote-left quote-icon-left"></i>
+              Jest et Vitest sont tout les deux des <strong>frameworks JavaScript</strong>.  
+              Pour commencer, définissons ce qu'est un <strong>framework</strong>.
+              </br>
+              Un framework est une infrastructure logicielle, qui désigne en programmation informatique un ensemble d'outils et de composants logiciels. Ils servent de boite à outils pour le développeur, pour lui <strong>faciliter le développement d'un site web ou d'une application</strong>. Dernièrement, Vitest gagne de plus en plus en popularité face à Jest, qui reste le framework de tests le plus populaire à ce jour. Nous allons donc voir les principales différences entre ces deux frameworks.
+            </p>
+            <p>
+              La première grande différence entre <strong>Vitest et Jest</strong>, c'est que Vitest est basé sur <strong>Vite</strong>. Vite est un <strong>outil de build qui permet de délivrer le code front-end en utilisant les modules EcmaScript natif et qui Rollup (un bundler JavaScript qui lit le code et englobe l'ensemble des modules importés en un fichier unique) pour le build de production</strong>. Vite approche les problèmes de développement front-end d'une toute nouvelle manière. Au lieu de générer un "<strong>bundle</strong>" à chaque fois qu'un fichier est modifié, Vite s'appuie sur la prise en charge des imports natifs en créant un serveur personnalisé (basé sur koa) pour délivrer des fichiers JS compatibles. On appelle cette fonctionnalité le "<strong>Hot Module Reloading (HMR)</strong>".
+            </p>
+            <div class="img-articles">
+              <div class="img-articles-container">
+                <img src="../assets/img/articles/jest-vs-vitest/test-jest.png" alt="test jest" class="img-rounded | img-test-jest"/>
+                <img src="../assets/img/articles/jest-vs-vitest/test-vitest-ts.png" alt="test vitest typescript" class="img-rounded | img-test-vitest-ts"/>
+              </div>
+
+              <div class="img-articles-container-mobile">
+                <img src="../assets/img/articles/jest-vs-vitest/test-jest.png" alt="test jest" class="img-rounded | img-test-jest"/>
+                <img src="../assets/img/articles/jest-vs-vitest/test-vitest-ts.png" alt="test vitest typescript" class="img-rounded | img-test-vitest-ts"/>
+              </div>
+              <p>On remarque ici que grâce au <strong>HMR</strong>, Vitest peut relancer juste le test unitaire que l'on vient de lancer de façon automatique, par le simple fait d'avoir modifié un fichier. Jest, quant à lui, possède un <strong>HMR</strong>, mais il doit quand même <strong>relancer tous les tests unitaires lorsqu'il détecte un changement</strong>. On peut aussi noter que <strong>Vitest supporte aussi le TypeScript</strong>.
+              </p>
+              <div class="img-articles-container">
+                <img src="../assets/img/articles/jest-vs-vitest/test-vitest.png" alt="test vitest" class="img-rounded | img-test-vitest"/>
+                <img src="../assets/img/articles/jest-vs-vitest/test-vitest-HMR.png" alt="test vitest" class="img-rounded | img-test-vitest-HMR"/>
+              </div>
+
+              <div class="img-articles-container-mobile">
+                <img src="../assets/img/articles/jest-vs-vitest/test-vitest.png" alt="test vitest" class="img-rounded | img-test-vitest"/>
+                <img src="../assets/img/articles/jest-vs-vitest/test-vitest-HMR.png" alt="test vitest" class="img-rounded | img-test-vitest-HMR"/>
+              </div>
+            </div>
+            <div class="img-articles">
+              <p>
+                Prenons un exemple. Ici, nous allons voir un test unitaire classique. Ce test aura pour but de vérifier une addition. Pour commencer, nous avons initier un projet avec la commande "<strong>npm -init</strong>". De ce fait, un <strong>package.json</strong> a été créé. Dans ce package.json, il a fallut rajouter le paramètre <strong>--globals</strong> à Vitest. C'est essentiel, car dans le cas présent, le code est en <strong>CommonJS</strong>. Les fonctions telles que "<strong>test, ou expect</strong>", ne sont pas nativement importées avec vitest.
+              </p>
+              <div class="img-articles-container">
+                <img src="../assets/img/articles/jest-vs-vitest/package-json.png" alt="jest does not support ESM" class="img-rounded | img-package-json"/>
+
+                <div class="img-articles-container-vertical">
+                  <img src="../assets/img/articles/jest-vs-vitest/sum-js.png" alt="jest does not support ESM" class="img-rounded | img-sum-js"/>
+                  <img src="../assets/img/articles/jest-vs-vitest/sum-test-js.png" alt="jest does not support ESM" class="img-rounded | img-sum-test-js"/>
+                </div>
+              </div>
+
+              <div class="img-articles-container-mobile">
+                <img src="../assets/img/articles/jest-vs-vitest/package-json.png" alt="jest does not support ESM" class="img-rounded | img-package-json"/>
+                <img src="../assets/img/articles/jest-vs-vitest/sum-js.png" alt="jest does not support ESM" class="img-rounded | img-sum-js"/>
+                <img src="../assets/img/articles/jest-vs-vitest/sum-test-js.png" alt="jest does not support ESM" class="img-rounded | img-sum-test-js"/>
+              </div>
+              <p>Jest peut utiliser les modules ES2022, mais ce n'est pas natif&nbsp;: il faut pour cela rajouter <strong>Babel</strong>, et le configurer pour que Jest puisse utiliser des modules ES2022. <strong>Babel est un compilateur JavaScript open source qui est utilisée pour convertir du code EcmaScript en une version JavaScript compatible avec les environnements et les navigateurs plus anciens</strong>. Cela permet donc à Jest de pouvoir lire du EC2022.
+              </p>
+            </div>
+            <p>
+              La deuxième chose qui diférencie Vitest et Jest, c'est le <strong>support des modules EcmaScript ("modules ES2022")</strong> lorsque l'on installe le framework de base. <strong>Jest supporte le CommonJS</strong>, alors que <strong>Vitest supporte aussi bien le CommonJS que les modules ES2022</strong>. Les modules ES2022 sont les modules standards pour JavaScript, alors que le CommonJS est utilisé avec Node. La grande différence entre ces 2 modules, c'est que CommonJs charge les dépendences sur demande quand on exécute le code, et les modules ES2022 sont pré-analysés afin de résoudre les importations supplémentaires avant l'exécution du code. Il est aussi important de noter que ces 2 frameworks utilisent la même API, ce qui veut dire que Vitest est compatible avec Jest.
+            </p>
+            <div class="img-articles">
+              <div class="img-articles-container">
+                <img src="../assets/img/articles/jest-vs-vitest/jest-does-not-support-ESM.png" alt="jest does not support ESM" class="img-rounded | img-jest-does-not-support-ESM"/>
+              </div>
+              
+              <div class="img-articles-container-mobile">
+                <img src="../assets/img/articles/jest-vs-vitest/jest-does-not-support-ESM.png" alt="jest does not support ESM" class="img-rounded | img-jest-does-not-support-ESM"/>
+              </div>
+              <p>Jest peut utiliser les modules ES2022, mais ce n'est pas natif&nbsp;: il faut pour cela rajouter <strong>Babel</strong>, et le configurer pour que Jest puisse utiliser des modules ES2022. <strong>Babel est un compilateur JavaScript open source qui est utilisé pour convertir du code EcmaScript en une version JavaScript compatible avec les environnements et les navigateurs plus anciens</strong>. Cela permet donc à Jest de pouvoir lire du EC2022.
+              </p>
+            </div>
+            <p>
+              Nous allons maintenant reprendre l'exemple cité plus haut, mais au lieu de programmer en <strong>CommonJS</strong>, le code sera en <strong>modules ES2022</strong>. De ce fait, nous n'avons plus besoin d'ajouter "<strong>--globals</strong>" à vitest, car cela se fera grâce aux imports natifs.
+            </p>
+            <div class="img-articles">
+              <div class="img-articles-container">
+                <img src="../assets/img/articles/jest-vs-vitest/package-json-ESM.png" alt="package.json EcmaScript Modules" class="img-rounded | img-package-json-ESM"/>   
+
+                <div class="img-articles-container-vertical">
+                  <img src="../assets/img/articles/jest-vs-vitest/sum-js-ESM.png" alt="sum.js ESM" class="img-rounded | img-sum-js-ESM"/>
+                <img src="../assets/img/articles/jest-vs-vitest/sum-test-js-ESM.png" alt="sum.test.js ESM" class="img-rounded | img-sum-test-js-ESM"/>
+                </div>
+              </div>  
+              
+              <div class="img-articles-container-mobile">
+                <img src="../assets/img/articles/jest-vs-vitest/package-json-ESM.png" alt="package.json EcmaScript Modules" class="img-rounded | img-package-json-ESM"/>   
+                <img src="../assets/img/articles/jest-vs-vitest/sum-js-ESM.png" alt="sum.js ESM" class="img-rounded | img-sum-js-ESM"/>
+                <img src="../assets/img/articles/jest-vs-vitest/sum-test-js-ESM.png" alt="sum.test.js ESM" class="img-rounded | img-sum-test-js-ESM"/>  
+              </div>
+            </div>            
+            <p>
+              Vitest est un framework dit "<strong>ESM first</strong>". Cela signifie qu'il est plus avantageux de coder en <strong>ES2022</strong> qu'en <strong>CommonJS</strong>. En effet, si l'on utilise les imports natifs, on va avoir dans notre éditeur de texte du typage sur notre code. Ce qui signifie une autocomplétion lorsque l'on écrit, pour nous lister les différentes APIs disponibles. Cette autocomplétion ne fonctionne pas lorsque l'on programme en CommonJS.
+            </p>
+            <div class="img-articles">              
+              <div class="img-articles-container">
+                <img src="../assets/img/articles/jest-vs-vitest/vitest-ESM-first.png" alt="vitest ESM first" class="img-rounded | img-vitest-ESM-first"/>
+              </div>
+
+              <div class="img-articles-container-mobile">
+                <img src="../assets/img/articles/jest-vs-vitest/vitest-ESM-first.png" alt="vitest ESM first" class="img-rounded | img-vitest-ESM-first"/>  
+              </div>
+            </div>
+            <p>
+              Pour conclure, Jest et Vitest ont beaucoup de choses en commun, néanmoins, sur les choses que j'ai évoquées précédemment, Vitest est plus optimisé et répond plus aux demandes des développeurs, qui démontre que Vitest prend énormément en popularité depuis déjà plusieurs mois. <strong>Ayant utilisé uniquement Jest lors de mon stage</strong>, je n'ai pas pu apprécier les nombreux avantages de Vitest lors de mes sessions de tests. Je trouve que l'apparition d'une alternative à Jest, qui reste le leader sur le marché, est très bien, car c'est une technologie assez nouvelle et très prometteuse. Si vous souhaitez avoir plus d'information sur ces 2 frameworks, je vous mets un lien vers la documentation <a class="documentation-link" href="https://jestjs.io/fr/docs/getting-started" target=”_blank” rel="noreferrer noopener">Jest</a>, ainsi que le lien vers la documentation <a class="documentation-link" href="https://vitest.dev/guide/" target=”_blank” rel="noreferrer noopener">Vitest</a>.
+            </p>
+            
+          </div>
+
+          <div class="article-navigation ms-4" data-aos="fade-up" data-aos-delay="100">
+            <h5 class="nav-title mb-3 mt-4">Lire les autres articles</h5>
+            <ul>
+              <li><a class="nav-article" href="./la-méthode-agile">La méthode Agile</a></li>
+              <li><a class="nav-article" href="./time-break">Time Break du 21/06</a></li>
+              <li><a class="nav-article" href="./mes-projets-réalisés">Mes projets réalisés</a></li>
+              <li><a class="nav-article" href="./nouveautés-ES2022">Les nouveautés apportées avec ES2022</a></li>
+              <li><a class="nav-article" href="./bilan">Le stage&nbsp;:&nbsp;mon bilan</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section> <!-- End of Article -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright user-select-none">
+        &copy; 2022 <span>Mathias LEROY</span>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

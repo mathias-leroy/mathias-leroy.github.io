@@ -14,7 +14,6 @@ body {
   
 main {
   margin-left: 300px;
-  scroll-snap-type: y proximity;
 }
   
 a {
@@ -37,6 +36,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .user-select-none {
   user-select: none;
 }
@@ -54,9 +58,9 @@ Back to top button
   visibility: hidden;
   opacity: 0;
   right: 30px;
-  bottom: 15px;
+  bottom: 20px;
   z-index: 996;
-  background: #c90a14;
+  background: #2d2c2c;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -70,7 +74,7 @@ Back to top button
 }
 
 .back-to-top:hover {
-  background: #fc0d1a;
+  background: #c90a14;
   color: #fffbfb;
 }
 
@@ -197,16 +201,14 @@ Navigation Menu
 }
 
 /* Mobile Navigation */
-.mobile-nav-toggle {
+[class*="mobile-nav-toggle"] {
   position: sticky;
-  left: 25px;
-  top: 15px;
-  z-index: 999;
+  top: 20px;
   border: 0;
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #c90a14;
+  background-color: #2d2c2c;
   color: #fffbfb;
   width: 40px;
   height: 40px;
@@ -218,13 +220,27 @@ Navigation Menu
   cursor: pointer;
 }
 
-.mobile-nav-active {
-  overflow: hidden;
+.mobile-nav-toggle-open {
+  left: 10px;
+  z-index: 98;
 }
 
-.mobile-nav-active .mobile-nav-toggle {
-  left: 240px;  
-  transition: all 0.55s;
+.mobile-nav-toggle-open:hover {
+  background-color: #c90a14;
+}
+
+.mobile-nav-toggle-close {
+  background-color: #c90a14;
+  left: 220px;
+  z-index: 100;
+}
+
+.mobile-nav-toggle-close:hover {
+  background-color: #c90a14;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
 }
 
 .mobile-nav-active #header {
@@ -245,7 +261,6 @@ Sections General
 section {
   padding: 60px 0;
   padding-right: 20px;
-  scroll-snap-align: start;
 }
 
 .section-bg {
@@ -282,8 +297,8 @@ section {
 
 @media (min-width: 980px) {
   section {
-    padding-right: 1.5rem!important;
-    padding-left: 1.5rem!important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
   }
 }
 

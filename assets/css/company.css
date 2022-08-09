@@ -230,6 +230,22 @@ Role description
     text-align: justify;
 }
 
+.role-description-right ul li {
+    padding-bottom: 8px;
+}
+
+.role-description-right ul li::before {
+    content: "+";
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.role-description-right ul ul li::before {
+    content: "●";
+    font-weight: bold;
+    padding-right: 20px;
+}
+
 .sinistre-logo {
     max-width: max(60%, 200px);
 }
