@@ -62,13 +62,13 @@ Articles (Home)
 
 @media (min-width: 1200px) {
   .card {
-    width: 30vh;
+    width: 35vh;
   }
 }
   
 @media (min-width: 800px) and (max-width: 1199px) {
   .card {
-    width: max(30vh, 40%);
+    width: 40vh;
   }
 }
 
