@@ -86,10 +86,12 @@
    */
   on('click', '.mobile-nav-toggle-open', function(e) {
     select('body').classList.toggle('mobile-nav-active')
+    document.getElementById("main").style.pointerEvents = "none";
   })
 
   on('click', '.mobile-nav-toggle-close', function(e) {
     select('body').classList.toggle('mobile-nav-active')
+    document.getElementById("overlay").style.display = "none";
   })
 
   /**

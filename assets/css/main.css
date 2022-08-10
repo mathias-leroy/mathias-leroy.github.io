@@ -222,7 +222,13 @@ Navigation Menu
 
 .mobile-nav-toggle-open {
   left: 10px;
+  z-index: 1;
+}
+
+#hero .mobile-nav-toggle-open {
+  left: 10px;
   z-index: 98;
+  background-color: #c90a14;
 }
 
 .mobile-nav-toggle-open:hover {
@@ -330,5 +336,9 @@ Footer
 @media (max-width: 1199px) {
   #footer {
     left: -300px;
+  }
+
+  #footer .copyright {
+    display: none;
   }
 }
