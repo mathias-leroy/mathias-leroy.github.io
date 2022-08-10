@@ -221,12 +221,11 @@ Navigation Menu
 }
 
 .mobile-nav-toggle-open {
-  left: 10px;
+  left: 20px;
   z-index: 1;
 }
 
 #hero .mobile-nav-toggle-open {
-  left: 10px;
   z-index: 98;
   background-color: #c90a14;
 }
