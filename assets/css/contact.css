@@ -15,7 +15,7 @@ Contact
   padding-top: 30px;
 }
 
-.contact .info i {
+.contact .info span {
   font-size: 20px;
   color: #c90a14;
   float: left;
@@ -44,7 +44,9 @@ Contact
   color: #c90a14;
 }
   
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .address:hover span,
+.contact .info .email:hover span,
+.contact .info .phone:hover span {
   background: #c90a14;
   color: #fffbfb;
 }

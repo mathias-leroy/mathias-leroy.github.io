@@ -6,10 +6,6 @@ Articles (Home)
   border-radius: 10px;
 }
 
-.card:hover {
-  border: 2px solid #c90a14;
-}
-
 .card-body {
   display: flex;
   flex-direction: column;
@@ -19,11 +15,6 @@ Articles (Home)
 .card-text {
   text-align: justify;
   margin-bottom: 20px;
-}
-
-.card:hover .card-title {
-  color: #c90a14;
-  font-weight: bold;
 }
 
 .card-title {
@@ -54,21 +45,45 @@ Articles (Home)
   margin-inline: auto;
 }
 
-.btn-articles:hover {
-  background: #c90a14;
-  color: #fffbfb;
-  text-decoration: none;
-}
-
 @media (min-width: 1200px) {
   .card {
     width: 40vh;
+  }
+
+  .card:hover {
+    border: 2px solid #c90a14;
+  }
+  
+  .card:hover .card-title {
+    color: #c90a14;
+    font-weight: bold;
+  }
+
+  .btn-articles:hover {
+    background: #c90a14;
+    color: #fffbfb;
+    text-decoration: none;
   }
 }
   
 @media (min-width: 800px) and (max-width: 1199px) {
   .card {
     width: 40vh;
+  }
+
+  .card:hover {
+    border: 2px solid #c90a14;
+  }
+  
+  .card:hover .card-title {
+    color: #c90a14;
+    font-weight: bold;
+  }
+
+  .btn-articles:hover {
+    background: #c90a14;
+    color: #fffbfb;
+    text-decoration: none;
   }
 }
 
@@ -142,7 +157,12 @@ Articles
   
   /* Time Break */
   .article-item .img-equipes {
-    width: 90%;
+    width: 95%;
+  }
+
+  .article-item .mobile-list-activity,
+  .article-item .list-activity {
+    display: none;
   }
 
   .article-item .img-repas,
@@ -169,8 +189,29 @@ Articles
   }
 
   /* Time Break */
-  .article-item .img-equipes {
-    width: 90%;
+  .article-item .img-desktop {
+    display: none;
+  }
+
+  .article-item .mobile-list-activity,
+  .article-item .list-activity li {
+    padding-block: 0;
+  }
+
+  .article-item .list-activity li {
+    display: flex;
+    justify-content: left;
+  }
+
+  .article-item .list-activity li:not(:last-child) {
+    padding-bottom: 10px;
+  }
+
+  .article-item .list-activity li::before {
+    content: "⇒";
+    font-weight: bold;
+    padding-right: 20px;
+    vertical-align: center;
   }
 
   .article-item .img-repas,
@@ -197,8 +238,29 @@ Articles
   }
 
   /* Time Break */
-  .article-item .img-equipes {
+  .article-item .img-desktop {
     display: none;
+  }
+
+  .article-item .mobile-list-activity,
+  .article-item .list-activity li {
+    padding-block: 0;
+  }
+
+  .article-item .list-activity li {
+    display: flex;
+    justify-content: left;
+  }
+
+  .article-item .list-activity li:not(:last-child) {
+    padding-bottom: 10px;
+  }
+
+  .article-item .list-activity li::before {
+    content: "⇒";
+    font-weight: bold;
+    padding-right: 20px;
+    vertical-align: center;
   }
 
   .article-item .img-repas,

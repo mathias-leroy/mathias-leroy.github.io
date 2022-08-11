@@ -49,6 +49,15 @@ ul, li {
   margin-left: 30px;
   margin-right: 20px;
 }
+
+[class*="bx-"] {
+  font-size: 25px;
+}
+
+.nav-link [class*="bx-"] {
+  font-size: 25px;
+  margin-right: 10px;
+}
   
 /*--------------------------------------------------------------
 Back to top button
@@ -67,7 +76,7 @@ Back to top button
   transition: all 0.4s;
 }
 
-.back-to-top i {
+.back-to-top span {
   font-size: 28px;
   color: #fffbfb;
   line-height: 0;
@@ -175,7 +184,8 @@ Navigation Menu
   white-space: nowrap;
 }
 
-.nav-menu a, .nav-menu a:focus {
+.nav-menu a, 
+.nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #c2c0c0;
@@ -185,19 +195,32 @@ Navigation Menu
   font-size: 15px;
 }
 
-.nav-menu a i, .nav-menu a:focus i {
-  font-size: 24px;
+.nav-menu a .bx {
+  font-size: 28px;
   padding-right: 8px;
   color: #c2c0c0;
 }
 
-.nav-menu a:hover, .nav-menu .current, .nav-menu .current:focus, .nav-menu li:hover > a {
-  text-decoration: none;
-  color: #fffbfb;
+.nav-menu a span {
+  font-size: 16px;
+  color: #c2c0c0;
 }
 
-.nav-menu a:hover i, .nav-menu .current i, .nav-menu .current:focus i, .nav-menu li:hover > a i {
+.nav-menu .current span,
+.nav-menu .current:focus span,
+.nav-menu a:hover span,
+.nav-menu li:hover > a  span {
+  color: #fffbfb;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.nav-menu a:hover .bx,
+.nav-menu .current .bx,
+.nav-menu .current:focus .bx,
+.nav-menu li:hover > a .bx {
   color: #c90a14;
+  text-decoration: none;
 }
 
 /* Mobile Navigation */
