@@ -1,26 +1,20 @@
 /*--------------------------------------------------------------
 General
 --------------------------------------------------------------*/
-.history .container,
-.squad .container,
-.role .container {
+:is(.history, .squad, .role) .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 @media (min-width: 1200px) {
-    .history .container,
-    .squad .container,
-    .role .container {
+    :is(.history, .squad, .role) .container {
         max-width: 85%;
     }
 }
   
 @media (max-width: 1199px) {
-    .history .container,    
-    .squad .container,    
-    .role .container {
+    :is(.history, .squad, .role) .container {
         max-width: 90%;
     }
 }
@@ -121,7 +115,9 @@ Organization chart
 }
   
 /* The root node doesn't connect upwards */
-.tree > li {margin-top: 0;}
+.tree > li {
+    margin-top: 0;
+}
 .tree > li:before,
 .tree > li:after,
 .tree > li > span:before {
