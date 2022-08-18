@@ -42,9 +42,13 @@ Contact
 
 .contact .contact-info .list-grid{
   display: grid;
-  align-content: space-between;
+  align-content:flex-start;
   width: 260px;
   height: fit-content;
+}
+
+.contact .contact-info .list-grid p {
+  margin-block: 0;
 }
 
 .contact .contact-info .google-maps {
