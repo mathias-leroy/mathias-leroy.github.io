@@ -41,6 +41,10 @@ ul, li {
   list-style-type: none;
 }
 
+p {
+  margin-block: 20px;
+}
+
 .user-select-none {
   user-select: none;
 }
@@ -288,6 +292,7 @@ Sections General
 --------------------------------------------------------------*/
 section {
   padding: 60px 0 0 0;
+  margin-block: 20px;
 }
 
 .section-bg {

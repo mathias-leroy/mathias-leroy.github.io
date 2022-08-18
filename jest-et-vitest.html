@@ -41,18 +41,18 @@
         <!-- ======= Mobile nav toggle button (close) ======= -->
         <span class="bx bx-x mobile-nav-toggle-close d-xl-none"></span>
 
-        <img src="./assets/img/profile-img.png" alt="" class="img-fluid rounded-circle mt-5">
-        <h1 class="text-light">Mathias LEROY</a></h1>
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle mt-5">
+        <h1 class="text-light user-select-none">Mathias LEROY</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://github.com/MathLry/MathLry.github.io" class="GitHub" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-github"></span></a>
-          <a href="https://www.linkedin.com/in/mathias-hadrien-leroy/" class="linkedin" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-linkedin"></span></a>
+          <a href="https://github.com/MathLry/MathLry.github.io" class="GitHub" data-bs-toggle="Github" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="Github" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-github"></span></a>
+          <a href="https://www.linkedin.com/in/mathias-hadrien-leroy/" class="linkedin" data-bs-toggle="LinkedIn" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="LinkedIn" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-linkedin"></span></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar user-select-none">
         <ul class="ps-4">
           <li><a href="./" class="nav-link active"><span class="bx bx-home"></span> <span>Accueil</span></a></li>
-          <li><a href="./about.html" class="nav-link"><span class="bx bx-user"></span> <span>À propos</span></a></li>
+          <li><a href="./about" class="nav-link"><span class="bx bx-user"></span> <span>À propos</span></a></li>
           <li><a href="./articles" class="current nav-link"><span class='bx bx-news'></span> <span>Articles</span></a></li>
           <li><a href="./company" class="nav-link"><span class='bx bx-briefcase-alt-2'></span> <span>L'entreprise</span></a></li>
           <li><a href="./contact" class="nav-link"><span class="bx bx-envelope"></span> <span>Me contacter</span></a></li>
@@ -97,13 +97,11 @@
 
           <p>
             <span class="bx bxs-quote-left quote-icon-left"></span>
-            Jest et Vitest sont tout les deux des <strong>frameworks JavaScript</strong>.  
-            Pour commencer, définissons ce qu'est un <strong>framework</strong>.
-            </br>
-            Un framework est une infrastructure logicielle, qui désigne en programmation informatique un ensemble d'outils et de composants logiciels. Ils servent de boite à outils pour le développeur, pour lui <strong>faciliter le développement d'un site web ou d'une application</strong>. Dernièrement, Vitest gagne de plus en plus en popularité face à Jest, qui reste le framework de tests le plus populaire à ce jour. Nous allons donc voir les principales différences entre ces deux frameworks.
+            Jest et Vitest sont tous les deux des <strong>frameworks JavaScript</strong>.  
+            Pour commencer, définissons ce qu'est un <strong>framework</strong>. Un framework est une infrastructure logicielle, qui désigne en programmation informatique un ensemble d'outils et de composants logiciels. Ils servent de boite à outils pour le développeur, pour lui <strong>faciliter le développement d'un site web ou d'une application</strong>. Dernièrement, Vitest prend de plus en plus d'importance face à Jest, qui reste le framework de tests le plus populaire à ce jour. Nous allons donc voir les principales différences entre ces deux frameworks.
           </p>
           <p>
-            La première grande différence entre <strong>Vitest et Jest</strong>, c'est que Vitest est basé sur <strong>Vite</strong>. Vite est un <strong>outil de build qui permet de délivrer le code front-end en utilisant les modules EcmaScript natif et qui Rollup (un bundler JavaScript qui lit le code et englobe l'ensemble des modules importés en un fichier unique) pour le build de production</strong>. Vite approche les problèmes de développement front-end d'une toute nouvelle manière. Au lieu de générer un "<strong>bundle</strong>" à chaque fois qu'un fichier est modifié, Vite s'appuie sur la prise en charge des imports natifs en créant un serveur personnalisé (basé sur koa) pour délivrer des fichiers JS compatibles. On appelle cette fonctionnalité le "<strong>Hot Module Reloading (HMR)</strong>".
+            Vitest est basé sur <strong>Vite</strong>. C'est ce qui le différencie de Jest. Vite est un <strong>outil de build qui permet de délivrer le code Front-End en utilisant les modules EcmaScript natifs et qui Rollup (un bundler JavaScript qui lit le code et englobe l'ensemble des modules importés en un fichier unique) pour le build de production</strong>. Vite approche les problèmes de développement Front-End d'une toute nouvelle manière. Au lieu de générer un "<strong>bundle</strong>" à chaque fois qu'un fichier est modifié, Vite s'appuie sur la prise en charge des imports natifs en créant un serveur personnalisé (basé sur koa) pour délivrer des fichiers JS compatibles. On appelle cette fonctionnalité le "<strong>Hot Module Reloading (HMR)</strong>".
           </p>
           <div class="img-articles">
             <div class="img-articles-container">
@@ -129,7 +127,7 @@
           </div>
           <div class="img-articles">
             <p>
-              Prenons un exemple. Ici, nous allons voir un test unitaire classique. Ce test aura pour but de vérifier une addition. Pour commencer, nous avons initier un projet avec la commande "<strong>npm -init</strong>". De ce fait, un <strong>package.json</strong> a été créé. Dans ce package.json, il a fallut rajouter le paramètre <strong>--globals</strong> à Vitest. C'est essentiel, car dans le cas présent, le code est en <strong>CommonJS</strong>. Les fonctions telles que "<strong>test, ou expect</strong>", ne sont pas nativement importées avec vitest.
+              Prenons un exemple. Ici, nous allons voir un test unitaire classique. Ce test aura pour but de vérifier une addition. Pour commencer, nous avons initié un projet avec la commande "<strong>npm -init</strong>". De ce fait, un <strong>package.json</strong> a été créé. Dans ce package.json, il a fallu rajouter le paramètre <strong>--globals</strong> à Vitest. C'est essentiel, car dans le cas présent, le code est en <strong>CommonJS</strong>. Les fonctions telles que "<strong>test, ou expect</strong>", ne sont pas nativement importées avec vitest.
             </p>
             <div class="img-articles-container">
               <img src="./assets/img/articles/jest-vs-vitest/package-json.png" alt="jest does not support ESM" class="img-rounded | img-package-json"/>
@@ -149,7 +147,7 @@
             </p>
           </div>
           <p>
-            La deuxième chose qui diférencie Vitest et Jest, c'est le <strong>support des modules EcmaScript ("modules ES2022")</strong> lorsque l'on installe le framework de base. <strong>Jest supporte le CommonJS</strong>, alors que <strong>Vitest supporte aussi bien le CommonJS que les modules ES2022</strong>. Les modules ES2022 sont les modules standards pour JavaScript, alors que le CommonJS est utilisé avec Node. La grande différence entre ces 2 modules, c'est que CommonJs charge les dépendences sur demande quand on exécute le code, et les modules ES2022 sont pré-analysés afin de résoudre les importations supplémentaires avant l'exécution du code. Il est aussi important de noter que ces 2 frameworks utilisent la même API, ce qui veut dire que Vitest est compatible avec Jest.
+            La deuxième chose qui différencie Vitest et Jest, c'est le <strong>support des modules EcmaScript ("modules ES2022")</strong> lorsque l'on installe le framework de base. <strong>Jest supporte le CommonJS</strong>, alors que <strong>Vitest supporte aussi bien le CommonJS que les modules ES2022</strong>. Les modules ES2022 sont les modules standards pour JavaScript, alors que le CommonJS est utilisé avec Node. La grande différence entre ces 2 modules, c'est que CommonJs charge les dépendances sur demande quand on exécute le code, et les modules ES2022 sont pré-analysés afin de résoudre les importations supplémentaires avant l'exécution du code. Il est aussi important de noter que ces 2 frameworks utilisent la même API, ce qui veut dire que Vitest est compatible avec Jest.
           </p>
           <div class="img-articles">
             <div class="img-articles-container">
@@ -159,7 +157,7 @@
             <div class="img-articles-container-mobile">
               <img src="./assets/img/articles/jest-vs-vitest/jest-does-not-support-ESM.png" alt="jest does not support ESM" class="img-rounded | img-jest-does-not-support-ESM"/>
             </div>
-            <p>Jest peut utiliser les modules ES2022, mais ce n'est pas natif&nbsp;: il faut pour cela rajouter <strong>Babel</strong>, et le configurer pour que Jest puisse utiliser des modules ES2022. <strong>Babel est un compilateur JavaScript open source qui est utilisé pour convertir du code EcmaScript en une version JavaScript compatible avec les environnements et les navigateurs plus anciens</strong>. Cela permet donc à Jest de pouvoir lire du EC2022.
+            <p>Jest peut utiliser les modules ES2022, mais ce n'est pas natif&nbsp;: il faut pour cela rajouter <strong>Babel</strong>, et le configurer pour que Jest puisse utiliser des modules ES2022. <strong>Babel est un compilateur JavaScript open source qui est utilisée pour convertir du code EcmaScript en une version JavaScript compatible avec les environnements et les navigateurs plus anciens</strong>. Cela permet donc à Jest de pouvoir lire du EC2022.
             </p>
           </div>
           <p>

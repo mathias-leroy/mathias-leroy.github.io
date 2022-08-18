@@ -42,18 +42,18 @@
         <!-- ======= Mobile nav toggle button (close) ======= -->
         <span class="bx bx-x mobile-nav-toggle-close d-xl-none"></span>
 
-        <img src="./assets/img/profile-img.png" alt="" class="img-fluid rounded-circle mt-5">
-        <h1 class="text-light">Mathias LEROY</a></h1>
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle mt-5">
+        <h1 class="text-light user-select-none">Mathias LEROY</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://github.com/MathLry/MathLry.github.io" class="GitHub" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-github"></span></a>
-          <a href="https://www.linkedin.com/in/mathias-hadrien-leroy/" class="linkedin" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-linkedin"></span></a>
+          <a href="https://github.com/MathLry/MathLry.github.io" class="GitHub" data-bs-toggle="Github" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="Github" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-github"></span></a>
+          <a href="https://www.linkedin.com/in/mathias-hadrien-leroy/" class="linkedin" data-bs-toggle="LinkedIn" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="LinkedIn" target=”_blank” rel="noreferrer noopener"><span class="bx bxl-linkedin"></span></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar user-select-none">
         <ul class="ps-4">
           <li><a href="./" class="nav-link active"><span class="bx bx-home"></span> <span>Accueil</span></a></li>
-          <li><a href="./about.html" class="nav-link"><span class="bx bx-user"></span> <span>À propos</span></a></li>
+          <li><a href="./about" class="nav-link"><span class="bx bx-user"></span> <span>À propos</span></a></li>
           <li><a href="./articles" class="current nav-link"><span class='bx bx-news'></span> <span>Articles</span></a></li>
           <li><a href="./company" class="nav-link"><span class='bx bx-briefcase-alt-2'></span> <span>L'entreprise</span></a></li>
           <li><a href="./contact" class="nav-link"><span class="bx bx-envelope"></span> <span>Me contacter</span></a></li>
@@ -100,7 +100,7 @@
             <h5><a class="es2022-title-number">1.</a> <span class="es2022-title-underline">La méthode <a class="es2022-title-red"><strong>.at()</strong></a></span></h5>
           </div>
           <p>
-            La méthode <strong>.at()</strong> nous permet de lire un élément d'un "indexable" (tableau, chaine de caractères, des fonctions qui manipulent des données, etc), en renseignant simplement un index.
+            La méthode <strong>.at()</strong> nous permet de lire un élément d'un "indexable" (tableau, chaine de caractères, des fonctions qui manipulent des données, ...), en renseignant simplement un index.
           </p>
           <div class="code-example">
             <code>
@@ -140,7 +140,7 @@
             </code>              
           </div> <!-- End of code-example -->
           <p>
-            <strong>Mais alors, si le fait d'utiliser "<a class="string">array.at()</a>" ou "<a class="string">array[]</a>" reviens à effectuer la même chose, pourquoi cette fonctionnalité voit le jour&nbsp;?</strong> L'avantage d'utiliser "<strong><a class="string">array.at()</a></strong>" au lieu "<strong><a class="string">array[]</a></strong>" réside dans sa manière de fonctionner. La méthode "<strong><a class="string">.at()</a></strong>" permet de lire un tableau ou une chaine de caractères dans les deux sens, alors qu'auparavant, il fallait lire l'entièretée d'un tableau pour pouvoir lire la dernière valeur. <strong>C'est donc un gain de temps et cela simplifie grandement le code</strong>.
+            <strong>Mais alors, si le fait d'utiliser "<a class="string">array.at()</a>" ou "<a class="string">array[]</a>" reviens à effectuer la même action, pourquoi cette fonctionnalité voit le jour&nbsp;?</strong> L'avantage d'utiliser "<strong><a class="string">array.at()</a></strong>" au lieu "<strong><a class="string">array[]</a></strong>" réside dans sa manière de fonctionner. La méthode "<strong><a class="string">.at()</a></strong>" permet de lire un tableau ou une chaîne de caractères dans les deux sens, alors qu'auparavant, il fallait lire l'entièreté d'un tableau pour pouvoir lire la dernière valeur. <strong>C'est donc un gain de temps et cela simplifie grandement le code</strong>.
             À noter que cette méthode est dédiée à la lecture d'un élément&nbsp;: on ne peut donc pas réassigner une valeur en renseignant un index.
           </p>
           <div class="code-example">
@@ -162,7 +162,7 @@
             <h5><a class="es2022-title-number">2.</a> <span class="es2022-title-underline">"<a class="es2022-title-red"><strong>Top-Level await</strong></a>"</span></h5>
           </div>
           <p>
-            <strong>Top-Level await</strong> est utilisé pour simplifier le code. On remarque que nous n'avons plus besoin d'utiliser <strong>await</strong> dans une fonction asynchrone&nbsp;: maintenant nous sommes plus libre de le placer où nous le voulons (même à la toute première ligne de notre fichier). 
+            <strong>Top-Level await</strong> est utilisé pour simplifier le code. On remarque que nous n'avons plus besoin d'utiliser <strong>await</strong> dans une fonction asynchrone&nbsp;: maintenant, nous sommes plus libre de le placer où nous le voulons (même à la toute première ligne de notre fichier). 
           </p>
           <div class="code-example">
             <code>
@@ -184,7 +184,7 @@
             <h5><a class="es2022-title-number">3.</a> <span class="es2022-title-underline">L'ajout d'une <a class="es2022-title-red"><strong>cause d'erreur</strong></a></span></h5>
           </div>
           <p>
-            La <strong>cause d'erreur</strong> permet de créer de meilleurs messages d'erreurs en indiquant la cause de l'erreur. On remarque que nous n'avons plus besoin d'utiliser <strong>await</strong> dans une fonction asynchrone&nbsp;: maintenant, nous sommes plus libres de le placer où nous le voulons (même à la toute première ligne de notre fichier). 
+            Il est possible de créer de meilleurs messages d'erreurs en indiquant leur cause. Nous n'avons plus besoin d'utiliser <strong>await</strong> dans une fonction asynchrone&nbsp;: désormais, nous sommes plus libres de le placer où nous le voulons (même à la toute première ligne de notre fichier). 
           </p>
           <div class="code-example">
             <code>
@@ -208,14 +208,14 @@
             </code>
           </div> <!-- End of code-example -->
           <p>
-            On remarque ici qu'avec l'ajout d'une cause, cela permet de comprendre la <strong>véritable raison de l'erreur</strong>. On remarque aussi qu'il est tout à fait possible de créer plusieurs erreurs avec le même message d'erreur, mais en changeant la cause de l'erreur. <strong>Cela est utile lorsque l'on souhaite toujours afficher le même message d'erreur du côté front-end, mais avoir la possibilité de voir la véritable cause de l'erreur en back-end</strong>.
+            Avec l'ajout d'une cause, cela permet de comprendre la <strong>véritable raison de l'erreur</strong>. On remarque aussi qu'il est tout à fait possible de créer plusieurs messages d'erreurs identiques, mais en changeant la cause de l'erreur. <strong>Cela est utile lorsque l'on souhaite toujours afficher le même message d'erreur du côté Front-End, mais avoir la possibilité de voir la véritable cause de l'erreur en Back-End</strong>.
           </p>
 
           <div class="es2022-title mt-4">
             <h5><a class="es2022-title-number">4.</a> <span class="es2022-title-underline">Les déclarations de <a class="es2022-title-red"><strong>champs de classes</strong></a></span></h5>
           </div>
           <p>             
-            La <strong>cause d'erreur</strong> permet de créer de meilleurs messages d'erreurs en indiquant la cause de l'erreur. On remarque que nous n'avons plus besoin d'utiliser <strong>await</strong> dans une fonction asynchrone&nbsp;: maintenant, nous sommes plus libres de le placer où nous le voulons (même à la toute première ligne de notre fichier). 
+            La <strong>déclaration des champs de classes</strong> a été grandement améliorée&nbsp;: on gagne en lisibilité et le code est bien plus facile à maintenir. Il suffit par exemple d'ajouter un "<strong>#</strong>" devant une variable ou une méthode pour la rendre privée.
           </p>
           <div class="code-example">
             <code>
@@ -256,13 +256,13 @@
 
 
               <div class="block">
-                <span class="code-black"><span class="bold-text">const <span class="function">btn</span></span>&nbsp;= <span class="event bold-text">new </span><span class="function bold-text">User</span>();</span></br>
-                <span class="code-black"><span class="function bold-text">btn</span>.<span class="bold-text">#<span class="function ">privateUserMethod</span></span>();<span class="commentary">&nbsp;&nbsp;// won't work because it's a private method</span></span>
+                <span class="code-black"><span class="bold-text">const <span class="function">User2</span></span>&nbsp;= <span class="event bold-text">new </span><span class="function bold-text">User</span>();</span></br>
+                <span class="code-black"><span class="function bold-text">User2</span>.<span class="bold-text">#<span class="function ">privateUserMethod</span></span>();<span class="commentary">&nbsp;&nbsp;// won't work because it's a private method</span></span>
               </div>
             </code>
           </div> <!-- End of code-example -->
           <p>
-            On remarque qu'il n'y a plus besoin de passer par un <strong>constructeur</strong> pour déclarer nos champs en publique, privé, ou statique. Cette fonctionnalité favorise la <strong>programmation orientée objets (POO)</strong>. Maintenant, <strong>les classes peuvent avoir des propriétés et des méthodes publiques, privées et statiques</strong>, ce qui n'était pas le cas auparavant.
+            Il n'y a plus besoin de passer par un <strong>constructeur</strong> pour déclarer nos champs en public, privé, ou statique. Cette fonctionnalité favorise la <strong>programmation orientée objets (POO)</strong>. Désormais, <strong>les classes peuvent avoir des propriétés et des méthodes publics, privées et statiques</strong>, ce qui n'était pas le cas auparavant.
           </p>
 
           <div class="es2022-title mt-4">

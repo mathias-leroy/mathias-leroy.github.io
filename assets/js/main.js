@@ -85,11 +85,13 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle-open', function(e) {
+    e.preventDefault()
     select('body').classList.toggle('mobile-nav-active')
     document.getElementById("main").style.pointerEvents = "none";
   })
 
   on('click', '.mobile-nav-toggle-close', function(e) {
+    e.preventDefault()
     select('body').classList.toggle('mobile-nav-active')
     document.getElementById("overlay").style.display = "none";
   })
@@ -146,7 +148,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function(_direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -166,5 +168,18 @@
       mirror: false
     })
   });
+
+  /**
+   * Popovers on social links
+   */
+  var popoverTriggerGithub = [].slice.call(document.querySelectorAll('[data-bs-toggle="Github"]'))
+  var popoverGithub = popoverTriggerGithub.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+
+  var popoverTriggerLinkedIn = [].slice.call(document.querySelectorAll('[data-bs-toggle="LinkedIn"]'))
+  var popoverLinkedIn = popoverTriggerLinkedIn.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
 
 })()
