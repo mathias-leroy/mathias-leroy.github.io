@@ -39,30 +39,38 @@ Company
 }
 
 .squad .section-title .list-sinistres li:first-child {
-    padding-top: 20px;
+    margin-top: var(--spacing-20);
 }
 
 .squad .section-title .list-sinistres li {
-    padding-bottom: 20px;
+    margin-bottom: var(--spacing-20);
+    display: flex;
+    align-content: center;
+    vertical-align: center;
 }
 
-.squad .section-title .list-sinistres li::before {
-    content: "⇒";
-    font-weight: bold;
-    padding-right: 20px;
-    vertical-align: center;
+.squad .section-title .list-sinistres .bx {
+    margin-bottom: var(--spacing-20);
+    align-content: center;
+    margin-right: var(--spacing-20);
+}
+
+.squad .section-title .list-sinistres p {
+    margin-bottom: var(--spacing-20);
+    margin-block: 0;
+    align-content: center;
 }
 
 .img-company {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-block: 20px;
+    margin-block: var(--spacing-20);
 }
 
 .img-company .img-siège-maif {
-    border-radius: 10px;
-    margin-block: 20px;
+    border-radius: var(--br-10);
+    margin-block: var(--spacing-20);
 }
 
 @media (min-width: 800px) {
@@ -71,7 +79,7 @@ Company
         font-weight: bold;
         display: inline-block;
         position: relative;
-        color: #c90a14;
+        color: var(--color-red-primary);
     }
 
     :is(.documentation-link, .redirect-link):after {
@@ -82,7 +90,7 @@ Company
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #c90a14;
+        background-color: var(--color-red-primary);
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
@@ -94,8 +102,8 @@ Company
 
     .img-company .img-siège-maif {
         width: 90%;
-        border-radius: 10px;
-        margin-block: 20px;
+        border-radius: var(--br-10);
+        margin-block: var(--spacing-20);
     }
 }
 
@@ -105,7 +113,7 @@ Company
         font-weight: bold;
         display: inline-block;
         position: relative;
-        color: #c90a14;
+        color: var(--color-red-primary);
     }
 
     :is(.documentation-link, .redirect-link):after {
@@ -115,7 +123,7 @@ Company
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #c90a14;
+        background-color: var(--color-red-primary);
     }
 
     .img-company .img-siège-maif {
@@ -127,10 +135,10 @@ Company
 Organization chart
 --------------------------------------------------------------*/
 .tree-horizontal {
-    margin-top: 30px;
+    margin-block: var(--spacing-40);
 }
 
-.tree, .tree ul, .tree li {
+.tree, :is(ul, li) {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -138,7 +146,6 @@ Organization chart
 }
 
 .tree {
-    margin: 0 0 1em;
     text-align: center;
 }
 
@@ -152,12 +159,12 @@ Organization chart
 
 .tree li {
     display: table-cell;
-    padding: .5em 0;
+    padding-top: var(--spacing-10);
     vertical-align: top;
 }
 
 .tree li:before {
-    outline: solid 1px #c90a14;
+    outline: solid 1px var(--color-red-primary);
     content: "";
     left: 0;
     position: absolute;
@@ -174,14 +181,13 @@ Organization chart
 }
 
 .tree span {
-    border: solid .1em #c90a14;
-    border-radius: .2em;
+    border: solid .1em var(--color-red-primary);
+    border-radius: var(--br-10);
     display: inline-block;
-    margin: 0 .2em .5em;
-    padding: .2em .5em;
+    margin: 0 var(--spacing-5) var(--spacing-8);
+    padding: var(--spacing-5) var(--spacing-8);
     position: relative;
     font-weight: bold;
-    font-family: "Raleway", sans-serif;
 }
   
 /* The root node doesn't connect upwards */
@@ -206,19 +212,19 @@ Organization chart
     }
 
     .tree-horizontal .tree .tree-title {
-        font-size: 20px;
-        color: #c90a14;
-        border: solid 3px #c90a14;
+        font-size: var(--fs-22);
+        color: var(--color-red-primary);
+        border: solid 3px var(--color-red-primary);
     }
 
     .tree-horizontal .tree span {
-        font-size: 16px;
-        border: solid 2px #c90a14;
+        font-size: var(--fs-16);
+        border: solid 2px var(--color-red-primary);
     }
 
     .tree ul:before,
     .tree span:before {
-        outline: solid 1px #c90a14;
+        outline: solid 1px var(--color-red-primary);
         content: "";
         left: 50%;
         position: absolute;
@@ -243,19 +249,19 @@ Organization chart
     }
 
     .tree-horizontal .tree .tree-title {
-        font-size: 14px;
-        color: #c90a14;
-        border: solid 3px #c90a14;
+        font-size: var(--fs-12);
+        color: var(--color-red-primary);
+        border: solid 3px var(--color-red-primary);
     }
 
     .tree-horizontal .tree span {
-        font-size: 12px;
-        border: solid 2px #c90a14;
+        font-size: var(--fs-10);
+        border: solid 2px var(--color-red-primary);
     }
 
     .tree ul:before,
     .tree span:before {
-        outline: solid 1px #c90a14;
+        outline: solid 1px var(--color-red-primary);
         content: "";
         left: 50%;
         position: absolute;
@@ -267,56 +273,61 @@ Organization chart
     }
 
     .tree span:before {
-        top: -.75em;
-        height: .6em;
+        top: -.95em;
+        height: .7em;
     }
 }
   
 @media (max-width: 499px) {
     .tree-horizontal {
         max-width: 30%;
+        left: -30px;
         position: relative;
         text-align: center;
     }
 
     .tree-horizontal .tree .tree-title {
-        font-size: 14px;
-        color: #c90a14;
-        border: solid 3px #c90a14;
+        font-size: var(--fs-12);
+        color: var(--color-red-primary);
+        border: solid 3px var(--color-red-primary);
     }
 
     .tree-horizontal .tree span {
-        font-size: 10px;
-        border: solid 2px #c90a14;
+        font-size: var(--fs-10);
+        border: solid 2px var(--color-red-primary);
     }
 
     .tree ul:before,
     .tree span:before {
-        outline: solid 1px #c90a14;
+        outline: solid 1px var(--color-red-primary);
         content: "";
         left: 50%;
         position: absolute;
     }
 
     .tree ul:before {
-        top: -.4em;
-        height: .4em;
+        top: -.5em;
+        height: .5em;
     }
 
     .tree span:before {
-        top: -1.05em;
-        height: 0.95em;
+        top: -1.2em;
+        height: .95em;
     }
 }
 
 /*--------------------------------------------------------------
 Role description
 --------------------------------------------------------------*/
+.role .role-title {
+    margin-left: var(--spacing-50);
+    margin-top: var(--spacing-60);
+}
 
 .role-description {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: var(--spacing-30);
     align-items: top;
 }
 
@@ -330,53 +341,53 @@ Role description
 
 .img-sinistre-squad,
 .role-description ul {
-    margin-top: 15px;
+    margin-top: var(--spacing-20);
 }
 
 .role-description-right {
     text-align: justify;
 }
 
-.role-description-right ul li {
-    padding-bottom: 8px;
+.role-description-right :is(ul li, ul .second-ul li) {
+    margin-bottom: var(--spacing-10);
+    display: flex;
+    align-content: center;
+    vertical-align: center;
     list-style-type: none;
 }
 
-.role-description-right ul li::before {
-    content: "+";
-    font-weight: bold;
-    padding-right: 20px;
+.role-description-right :is(ul li .bx, ul .second-ul li .bx) {
+    margin-bottom: var(--spacing-20);
+    align-content: center;
+    margin-right: var(--spacing-20);
 }
+
+.role-description-right :is(ul li p, ul .second-ul li p) {
+    margin-bottom: var(--spacing-20);
+    margin-block: 0;
+    align-content: center;
+}
+
 
 .role-description-right ul .second-ul {
     margin-top: 0;
+    margin-left: var(--spacing-30);
     list-style-type: none;
-}
-
-.role-description-right ul .second-ul li::before {
-    content: "⇒";
-    font-weight: bold;
-    padding-right: 20px;
-    vertical-align: center;
 }
 
 .sinistre-logo {
     max-width: max(60%, 200px);
 }
 
+
 @media (min-width: 800px) {
     .role-description-left {
-        margin-right: 10px;
+        margin-right: var(--spacing-20);
     }
     
     .role-description-right {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .role .role-title {
-        margin-left: 50px;
-        margin-top: 40px;
+        margin-left: var(--spacing-20);
+        margin-right: var(--spacing-20);
     }
 }
 
@@ -384,21 +395,10 @@ Role description
     .img-sinistre-squad {
         display: none;
     }
-
-    .role .role-title {
-        margin-left: 50px;
-        margin-top: 40px;
-    }
-
 }
   
 @media (max-width: 499px) {
     .img-sinistre-squad {
         display: none;
-    }
-
-    .role .role-title {
-        margin-left: 50px;
-        margin-top: 40px;
     }
 }

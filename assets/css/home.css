@@ -7,12 +7,12 @@ Hero Section
     background: url("../img/hero-bg.png") top center;
     z-index: 99;
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
 #hero:before {
     content: "";
-    background: rgba(24, 5, 5, 0.3);
+    background: var(--color-hero-shadow);
     position: absolute;
     inset: 0 0 0 0;
     z-index: 1;
@@ -21,33 +21,33 @@ Hero Section
 #hero .hero-section .hero-container {
     position: relative;
     z-index: 2;
-    min-width: 300px;
+    min-width: var(--spacing-300);
 }
 
 #hero .hero-section {
-    margin-top: 250px;
+    margin-top: var(--spacing-250);
 }
 
 #hero .hero-section h1 {
-    margin: 0 0 10px 0;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fffbfb;
+    margin-top: var(--spacing-10);
+    font-size: var(--fs-64);
+    font-weight: bold;
+    line-height: var(--lh-56);
+    color: var(--color-white);
 }
 
 #hero .hero-section p {
-    color: #fffbfb;
-    margin-bottom: 50px;
-    font-size: 26px;
-    font-family: "Poppins", sans-serif;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-50);
+    font-size: var(--fs-26);
+    font-family: var(--ff-secondary);
 }
 
 #hero .hero-section p span {
-    color: #fffbfb;
-    padding-bottom: 4px;
-    letter-spacing: 1px;
-    border-bottom: 3px solid #c90a14;
+    color: var(--color-white);
+    padding-bottom: var(--spacing-5);
+    letter-spacing: var(--ls-1);
+    border-bottom: 3px solid var(--color-red-primary);
 }
 
 @media (min-width: 1200px) {
@@ -58,13 +58,13 @@ Hero Section
 
     #hero .hero-section h1 {
         font-size: clamp(45px, 5vw, 50px);
-        line-height: 36px;
+        line-height: var(--lh-36);
     }
 
     #hero .hero-section h2 {
         font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 30px;
+        line-height: var(--lh-24);
+        margin-bottom: var(--spacing-30);
     }
 }
 
@@ -76,13 +76,13 @@ Hero Section
 
     #hero .hero-section h1 {
         font-size: clamp(45px, 5vw, 50px);
-        line-height: 36px;
+        line-height: var(--lh-36);
     }
 
     #hero .hero-section h2 {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 30px;
+        font-size: var(--fs-18);
+        line-height: var(--lh-24);
+        margin-bottom: var(--spacing-30);
     }
 }
 
@@ -94,13 +94,13 @@ Hero Section
 
     #hero .hero-section h1 {
         font-size: clamp(40px, 5vw, 45px);
-        line-height: 36px;
+        line-height: var(--lh-36);
     }
 
     #hero .hero-section h2 {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 30px;
+        font-size: var(--fs-18);
+        line-height: var(--lh-24);
+        margin-bottom: var(--spacing-30);
     }
 }
 
@@ -111,13 +111,13 @@ Hero Section
     }
 
     #hero .hero-section h1 {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: var(--fs-30);
+        line-height: var(--lh-36);
     }
 
     #hero .hero-section h2 {
-        font-size: 10px;
-        line-height: 24px;
-        margin-bottom: 30px;
+        font-size: var(--fs-10);
+        line-height: var(--lh-24);
+        margin-bottom: var(--spacing-30);
     }
 }

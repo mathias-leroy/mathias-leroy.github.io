@@ -26,14 +26,14 @@ General
 About
 --------------------------------------------------------------*/
 .about .section-title {
-    margin-left: 50px;
+    margin-left: var(--spacing-50);
     text-align: justify;
 }
 
 .about .content h3 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #c90a14;
+    font-weight: bold;
+    font-size: var(--fs-26);
+    color: var(--color-red-primary);
 }
 
 .about .content p {
@@ -46,54 +46,62 @@ About
 }
 
 .about .content ul li {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-20);
     display: flex;
     align-items: center;
 }
 
 .about .content ul strong {
-    margin-right: 10px;
+    margin-right: var(--spacing-10);
 }
 
 .about .content ul .bx {
-    font-size: 16px;
-    margin-right: 5px;
-    color: #c90a14;
+    font-size: var(--fs-16);
+    margin-right: var(--spacing-5);
+    color: var(--color-red-primary);
     line-height: 0;
 }
 
 .about .content p:last-child {
     margin-bottom: 0;
 }
+
+.about .social-links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
   
 .about .social-links a {
-    display: inline-block;
-    background: #c2c0c0;
-    color: #2d2c2c;
+    background: var(--color-grey);
+    color: var(--color-black);
     line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 10px;
+    margin-right: var(--spacing-4);
+    border-radius: var(--br-10);
     text-align: center;
     transition: 0.2s;
 }
   
 .about .social-links a:hover {
-    background: #c90a14;
-    color: #fffbfb;
+    background: var(--color-red-primary);
+    color: var(--color-white);
     text-decoration: none;
 }
 
 .about .social-links .linkedin, 
 .about .social-links .github {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 36px;
     height: 36px;
 }
-  
+
 .about .social-links .linkedin .bx, 
 .about .social-links .github .bx {
-    font-size: 20px;
+    font-size: var(--fs-22);
+    width: fit-content;
+    height: fit-content;
 }
 
 .about .profile-and-links {
@@ -102,9 +110,13 @@ About
     justify-content: center;
 }
 
+.about .profile-and-links .profile-picture {
+    border-radius: var(--br-10);
+}
+
 @media (min-width: 1200px) {
     .about .profile-and-links img {
-        width: 95%;
+        width: 100%;
         margin-inline: auto;
     }
 }
@@ -135,12 +147,12 @@ Skills
 
 .skills .progress .skill {
     padding: 0;
-    margin: 0 0 6px 0;
+    margin-bottom: var(--spacing-6);
     text-transform: uppercase;
     display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #2d2c2c;
+    font-weight: var(--fw-7);
+    font-family: var(--ff-secondary);
+    color: var(--color-black);
 }
 
 .skills .progress .skill .val {
@@ -149,7 +161,7 @@ Skills
 }
 
 .skills .progress-bar-wrap {
-    background: #c2c0c0;
+    background: var(--color-grey);
     height: 10px;
 }
 
@@ -157,14 +169,14 @@ Skills
     width: 1px;
     height: 10px;
     transition: 0.5s;
-    background-color: #7c060c;
+    background-color: var(--color-red-secondary);
 }
   
 /*--------------------------------------------------------------
 Resume
 --------------------------------------------------------------*/
 .resume .container {
-    padding-bottom: 40px;
+    padding-bottom: var(--spacing-40);
 }
 
 .resume .section-title{
@@ -174,9 +186,9 @@ Resume
 .resume .cv{
     width: 220px;
     height: 36px;
-    background: #c2c0c0;
-    border-radius: 10px;
-    color: #2d2c2c;
+    background: var(--color-grey);
+    border-radius: var(--br-10);
+    color: var(--color-black);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -184,57 +196,58 @@ Resume
 }
 
 .resume .cv:hover {
-    background: #c90a14;
-    color: #fffbfb;
+    background: var(--color-red-primary);
+    color: var(--color-white);
     text-decoration: none;
 }
   
 .resume .cv .bx {
-    font-size: 22px;
+    font-size: var(--fs-22);
 }
 
 .resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #2d2c2c;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-7);
+    margin-top: var(--spacing-20);
+    margin-bottom: var(--spacing-20);
+    color: var(--color-black);
 }
 
 .resume .resume-item {
-    padding: 0 0 20px 20px;
+    padding-bottom: var(--spacing-20);
+    padding-left: var(--spacing-20);
     margin-top: -2px;
-    border-left: 2px solid #7c060c;
+    border-left: 2px solid var(--color-red-secondary);
     position: relative;
     text-align: justify;
 }
 
 .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
+    line-height: var(--lh-18);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-7);
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #2d2c2c;
-    margin-bottom: 10px;
+    font-family: var(--ff-secondary);
+    color: var(--color-black);
+    margin-bottom: var(--spacing-10);
 }
 
 .resume .resume-item h5 {
-    font-size: 16px;
-    background: #c7aeb0;
-    color: #7c060c;
-    padding: 5px 15px;
+    font-size: var(--fs-16);
+    background: var(--color-red-background);
+    color: var(--color-red-secondary);
+    padding-top: var(--spacing-5);
     display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: var(--fw-7);
+    margin-bottom: var(--spacing-10);
 }
 
 .resume .resume-item ul {
-    padding-left: 20px;
+    padding-left: var(--spacing-20);
 }
 
 .resume .resume-item ul li {
-    padding-bottom: 10px;
+    padding-bottom: var(--spacing-10);
 }
 
 .resume .resume-item:last-child {
@@ -246,11 +259,11 @@ Resume
     position: absolute;
     width: 16px;
     height: 16px;
-    border-radius: 50px;
+    border-radius: var(--br-50);
     left: -9px;
     top: 0;
-    background: #fffbfb;
-    border: 2px solid #7c060c;
+    background: var(--color-red-background);
+    border: 2px solid var(--color-red-secondary);
 }
 
 .resume .resume-item .resume-quality {

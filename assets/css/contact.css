@@ -1,10 +1,6 @@
 /*--------------------------------------------------------------
 Contact
 --------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
-
 .contact .container {
   display: flex;
   flex-direction: column;
@@ -15,7 +11,7 @@ Contact
   display: flex;
   flex-direction: row;
   width: 100%;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   overflow-y: hidden;
   align-content: center;
 }
@@ -55,70 +51,70 @@ Contact
   margin-left: auto;
   width: 100%;
   height: 300px;
-  border: 2px solid #2d2c2c; 
-  border-radius: 5px;
+  border: 2px solid var(--color-black); 
+  border-radius: var(--br-10);
 }
 
 .contact .contact-info .list span {
   position: absolute;
-  font-size: 22px;
-  color: #fffbfb;
+  font-size: var(--fs-22);
+  color: var(--color-white);
   float: left;
   width: 44px;
   height: 44px;
-  background: #c90a14;
+  background: var(--color-red-primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: var(--br-50);
 }
 
 .contact .contact-info .list-horizontal span {
-  font-size: 22px;
-  color: #fffbfb;
+  font-size: var(--fs-22);
+  color: var(--color-white);
   width: 44px;
   height: 44px;
-  background: #c90a14;
+  background: var(--color-red-primary);
   padding-inline: auto;  
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-10);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: var(--br-50);
 }
 
 .contact .contact-info .list h4 {
-  padding-left: 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #2d2c2c;
+  padding-left: var(--spacing-60);
+  font-size: var(--fs-22);
+  font-weight: var(--fw-6);
+  margin-bottom: var(--spacing-5);
+  color: var(--color-black);
 }
 
 .contact .contact-info .list-horizontal h4 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #2d2c2c;
+  font-size: var(--fs-22);
+  font-weight: var(--fw-6);
+  margin-bottom: var(--spacing-20);
+  color: var(--color-black);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
 .contact .contact-info .list :is(p, a, ul) {
-  padding-left: 60px;
+  padding-left: var(--spacing-60);
   width: 100%;
-  font-size: 14px;
-  font-weight: 600;
-  color: #2d2c2c;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-6);
+  color: var(--color-black);
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .contact .contact-info .list-horizontal :is(p, a, ul) {
   width: fit-content;
-  font-size: 14px;
-  font-weight: 600;
-  color: #2d2c2c;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-6);
+  color: var(--color-black);
   padding: 0;
   margin: 0;
 }
@@ -136,7 +132,7 @@ Contact
   }
 
   .contact .contact-info {
-    margin-inline-start: 40px;
+    margin-inline-start: var(--spacing-40);
   }
 
   .contact .contact-info .info {
@@ -150,11 +146,11 @@ Contact
   .contact .contact-info .google-maps {
     width: max(70%, 35vw);
     margin-left: auto;    
-    margin-right: 20px;
+    margin-right: var(--spacing-40);
   }
 
   .contact .contact-info #mail-to:hover {
-    color: #c90a14;
+    color: var(--color-red-primary);
   }
 }
   
@@ -164,7 +160,7 @@ Contact
   }
 
   .contact .contact-info {
-    margin-inline-start: 40px;
+    margin-inline-start: var(--spacing-40);
   }
 
   .contact .contact-info .info {
@@ -178,11 +174,11 @@ Contact
   .contact .contact-info .google-maps {
     width: max(60%, 35vw);
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: var(--spacing-40);
   }
 
   .contact .contact-info #mail-to:hover {
-    color: #c90a14;
+    color: var(--color-red-primary);
   }
 }
 
@@ -210,11 +206,11 @@ Contact
   .contact .contact-info .google-maps {
     width: 80%;
     margin-inline: auto;
-    margin-block: 40px;
+    margin-block: var(--spacing-40);
   }
 
   .contact .contact-info #mail-to {
-    color: #c90a14;
+    color: var(--color-red-primary);
   }
 }
 
@@ -228,7 +224,7 @@ Contact
   }
 
   .contact .contact-info .info {
-    gap: 20px;
+    gap: var(--spacing-20);
   }
   
   .contact .contact-info .list-horizontal {
@@ -238,11 +234,11 @@ Contact
   .contact .contact-info .google-maps {
     width: 80%;
     margin-inline: auto;
-    margin-block: 40px;
+    margin-block: var(--spacing-40);
   }
 
   .contact .contact-info #mail-to {
-    color: #c90a14;
+    color: var(--color-red-primary);
   }
 }
   
@@ -256,7 +252,7 @@ Contact
   }
 
   .contact .contact-info .info {
-    gap: 20px;
+    gap: var(--spacing-20);
   }
 
   .contact .contact-info .list-horizontal {
@@ -266,10 +262,10 @@ Contact
   .contact .contact-info .google-maps {
     width: 90%;
     margin-inline: auto;
-    margin-block: 40px;
+    margin-block: var(--spacing-40);
   }
 
   .contact .contact-info #mail-to {
-    color: #c90a14;
+    color: var(--color-red-primary);
   }
 }

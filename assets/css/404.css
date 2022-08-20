@@ -1,17 +1,17 @@
 body, html{
     margin: 0;
     box-sizing: border-box;
-    background: #fffbfb;
+    background: var(--color-white);
 }
 
 .page404 {
-    background:#fffbfb;
-    font-family: "Raleway", sans-serif;
-    margin-top: 20px;
+    background:var(--color-white);
+    font-family: var(--ff-secondary);
+    margin-top: var(--spacing-20);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0 0;
+    padding-top: var(--spacing-40);
 }
 
 .row {
@@ -20,40 +20,42 @@ body, html{
 }
 
 .row a {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--ff-secondary);
     letter-spacing: 1px;
     text-decoration: none;
 }
 
 .link_404 {      
-    color: #fffbfb !important;
-    padding: 10px 20px;
-    border-radius: 10px;
+    color: var(--color-white);
+    padding-top: var(--spacing-10);
+    padding-left: var(--spacing-20);
+    border-radius: var(--spacing-10);
     font-weight: bold;
     text-transform: uppercase;
-    background: #c90a14;
-    margin: 20px 0 0 0;
+    background: var(--color-red-primary);
+    margin-top: var(--spacing-20);
     display: inline-block;
 }
 
 .contant_box_404 {
-    margin-top:-50px;
+    margin-top: -50px;
 }
 
 @media (min-width: 1200px) {
     .page404_bg_area h1 {
-        font-size: 100px;
+        font-size: var(--fs-100);
     }
+    
     .page404 {
         width: 100%;
     }
 
     .row h3 {
-        font-size:35px;
+        font-size: var(--fs-36);
     }
 
     .row p {
-        font-size: 20px;
+        font-size: var(--fs-22);
     }
 
     .page404_bg_area {
@@ -71,15 +73,15 @@ body, html{
     
 @media (min-width: 700px) and (max-width: 1199px) {
     .page404_bg_area h1 {
-        font-size: 80px;
+        font-size: var(--fs-80);
     }
 
     .row h3 {
-        font-size:30px;
+        font-size: var(--fs-30);
     }
 
     .row p {
-        font-size: 18px;
+        font-size: var(--fs-18);
     }
 
     .page404_bg_area {
@@ -92,15 +94,15 @@ body, html{
     
 @media (max-width: 699px) {
     .page404_bg_area h1 {
-        font-size: 60px;
+        font-size: var(--fs-64);
     }
 
     .row h3 {
-        font-size: 28px;
+        font-size: var(--fs-26);
     }
 
     .row p {
-        font-size: 16px;
+        font-size: var(--fs-16);
     }
 
     .page404_bg_area {

@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------
+Custom Properties
+--------------------------------------------------------------*/
+:root {
+    /* font */
+    --ff-primary: "Open Sans", sans-serif;
+    --ff-secondary: "Poppins", sans-serif;
+  
+    /* font size */
+    --fs-8: 8px;
+    --fs-10: 10px;
+    --fs-12: 12px;
+    --fs-14: 14px;  
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-22: 22px;
+    --fs-26: 26px;
+    --fs-30: 30px;
+    --fs-36: 36px;
+    --fs-50: 50px;
+    --fs-64: 64px;
+    --fs-80: 80px;
+    --fs-100: 100px;
+  
+    /* font weight */
+    --fw-6: 600;
+    --fw-7: 700;
+
+    /* letter spacing */
+    --ls-1: 1px;
+    --ls-2: 2px;
+
+    /* line height */
+    --lh-18: 18px;
+    --lh-24: 24px;
+    --lh-36: 36px;
+    --lh-56: 56px;
+  
+    /* colors */
+    --color-red-primary: #c90a14;
+    --color-red-secondary: #7c060c;
+    --color-red-background: #c7aeb0;
+    --color-white: #fffbfb;
+    --color-selection: #fcdfdf;
+    --color-section-bg: #e7dede;
+    --color-grey: #c2c0c0;
+    --color-black-sidebar: #292727;
+    --color-black: #2d2c2c;
+    --color-hero-shadow: rgba(24, 5, 5, 0.3);
+  
+    /* colors used for code explanation */
+    --color-code-background: #f5f5f5;
+    --color-code-commentary: #095c38;
+    --color-code-number: #002fff;
+    --color-code-string: #c90a14;
+    --color-code-function: #a51662;
+    --color-code-event: #2967cd;
+    --color-code-black: #2d2c2c;
+  
+    /* border-radius */
+    --br-10: 10px;
+    --br-50: 50%;
+  
+    /* spacing on elements */
+    --spacing-5: 5px;
+    --spacing-8: 8px;
+    --spacing-10: 10px;
+    --spacing-20: 20px;
+    --spacing-30: 30px;
+    --spacing-40: 40px;
+    --spacing-50: 50px;
+    --spacing-60: 60px;
+    --spacing-250: 250px;
+    --spacing-300: 300px;
+}

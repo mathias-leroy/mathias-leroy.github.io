@@ -7,33 +7,28 @@ html, body {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #292727;
+  font-family: var(--ff-primary);
+  color: var(--color-black-sidebar);
   overflow-x: hidden;
 }
   
 main {
-  margin-left: 300px;
+  margin-left: var(--spacing-300);
 }
   
-a {
-  color: #c90a14;
+a, a:hover {
+  color: var(--color-red-primary);
   text-decoration: none;
 }
 
 a::selection, p::selection, strong::selection, li::selection, br::selection, 
 span::selection, div::selection, img::selection, h1::selection, h2::selection, 
 h3::selection, h4::selection, h5::selection, h6::selection {
-  background-color: #fcdfdf;
-}
-
-a:hover {
-  color: #c90a14;
-  text-decoration: none;
+  background-color: var(--color-selection);
 }
   
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--ff-secondary);
 }
 
 ul, li {
@@ -42,7 +37,7 @@ ul, li {
 }
 
 p {
-  margin-block: 20px;
+  margin-block: var(--spacing-20);
 }
 
 .user-select-none {
@@ -50,17 +45,17 @@ p {
 }
 
 * .section-title {
-  margin-left: 30px;
-  margin-right: 20px;
+  margin-left: var(--spacing-30);
+  margin-right: var(--spacing-20);
 }
 
 [class*="bx-"] {
-  font-size: 25px;
+  font-size: var(--fs-26);
 }
 
 .nav-link [class*="bx-"] {
-  font-size: 25px;
-  margin-right: 10px;
+  font-size: var(--fs-26);
+  margin-right: var(--spacing-10);
 }
   
 /*--------------------------------------------------------------
@@ -73,22 +68,22 @@ Back to top button
   right: 30px;
   bottom: 20px;
   z-index: 996;
-  background: #2d2c2c;
+  background: var(--color-black);
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: var(--br-50);
   transition: all 0.4s;
 }
 
 .back-to-top span {
-  font-size: 28px;
-  color: #fffbfb;
+  font-size: var(--fs-26);
+  color: var(--color-white);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #c90a14;
-  color: #fffbfb;
+  background: var(--color-red-primary);
+  color: var(--color-white);
 }
 
 .back-to-top.active {
@@ -108,8 +103,8 @@ Header
   transition: all ease-in-out 0.5s;
   z-index: 99;
   transition: all 0.5s;
-  padding: 0 15px;
-  background: #2d2c2c;
+  padding-left: var(--spacing-10);
+  background: var(--color-black);
   overflow-y: auto;
 }
 
@@ -118,43 +113,52 @@ Header
   display: block;
   width: 100px;
   height: 100px;
-  border: 4px solid #c90a14;
+  border: 4px solid var(--color-red-primary);
 }
 
 #header .profile h1 {
-  font-size: 24px;
+  font-size: var(--fs-26);
   margin: 0;
   padding: 0;
-  font-weight: 600;
-  -moz-text-align-last: center;
+  font-weight: var(--fw-6);
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--ff-secondary);
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fffbfb;
+  color: var(--color-white);
   text-decoration: none;
+}
+
+#header .profile .social-links {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: var(--spacing-10);
 }
   
 #header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #c2c0c0;
-  color: #2d2c2c;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-grey);
+  color: var(--color-black);
+  margin-right: var(--spacing-5);
+  border-radius: var(--br-50);
+  transition: 0.2s;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+}
+
+#header .profile .social-links a .bx {
+  font-size: var(--fs-22);
+  width: fit-content;
+  height: fit-content;
 }
 
 #header .profile .social-links a:hover {
-  background: #c90a14;
-  color: #fffbfb;
+  background: var(--color-red-primary);
+  color: var(--color-white);
   text-decoration: none;
 }
   
@@ -173,7 +177,8 @@ Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 40px 0 0 10px;
+  padding-top: var(--spacing-40);
+  padding-left: var(--spacing-20);
   z-index: 1;
 }
 
@@ -188,62 +193,62 @@ Navigation Menu
   white-space: nowrap;
 }
 
-.nav-menu a, 
-.nav-menu a:focus {
+.nav-menu .nav-link, 
+.nav-menu .nav-link:focus {
   display: flex;
   align-items: center;
-  color: #c2c0c0;
-  padding: 12px 15px;
-  margin-bottom: 8px;
+  color: var(--color-grey);
+  padding-inline: auto;
+  margin-bottom: var(--spacing-30);
   transition: 0.3s;
-  font-size: 15px;
+  font-size: var(--fs-16);
 }
 
-.nav-menu a .bx {
-  font-size: 28px;
-  padding-right: 8px;
-  color: #c2c0c0;
+.nav-menu .nav-link .bx {
+  font-size: var(--fs-26);
+  padding-right: var(--spacing-8);
+  color: var(--color-grey);
 }
 
-.nav-menu a span {
+.nav-menu .nav-link span {
   font-size: 16px;
-  color: #c2c0c0;
+  color: var(--color-grey);
 }
 
 .nav-menu .current span,
 .nav-menu .current:focus span,
-.nav-menu a:hover span,
-.nav-menu li:hover > a  span {
-  color: #fffbfb;
+.nav-menu .nav-link:hover span,
+.nav-menu li:hover > .nav-link span {
+  color: var(--color-white);
   text-decoration: underline;
   text-underline-offset: 6px;
 }
 
-.nav-menu a:hover .bx,
+.nav-menu .nav-link:hover .bx,
 .nav-menu .current .bx,
 .nav-menu .current:focus .bx,
-.nav-menu li:hover > a .bx {
-  color: #c90a14;
+.nav-menu li:hover > .nav-link .bx {
+  color: var(--color-red-primary);
   text-decoration: none;
 }
 
 /* Mobile Navigation */
 [class*="mobile-nav-toggle"] {
   position: sticky;
-  top: 20px;
+  top: var(--spacing-20);
   border: 0;
-  font-size: 24px;
+  font-size: var(--fs-26);
   transition: all 0.4s;
   outline: none !important;
-  background-color: #2d2c2c;
-  color: #fffbfb;
+  background-color: var(--color-black);
+  color: var(--color-white);
   width: 40px;
   height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 0;
-  border-radius: 50px;
+  border-radius: var(--br-50);
   cursor: pointer;
 }
 
@@ -254,31 +259,28 @@ Navigation Menu
 
 #hero .mobile-nav-toggle-open {
   z-index: 98;
-  background-color: #c90a14;
+  background-color: var(--color-red-primary);
 }
 
 .mobile-nav-toggle-open:hover {
-  background-color: #c90a14;
+  background-color: var(--color-red-primary);
 }
 
 .mobile-nav-toggle-close {
-  background-color: #c90a14;
+  background-color: var(--color-red-primary);
   left: 220px;
   z-index: 100;
 }
 
 .mobile-nav-toggle-close:hover {
-  background-color: #c90a14;
+  background-color: var(--color-red-primary);
 }
 
 .mobile-nav-active {
   overflow: hidden;
 }
 
-.mobile-nav-active #header {
-  left: 0;
-}
-
+.mobile-nav-active #header,
 .mobile-nav-active #footer {
   left: 0;
 }
@@ -291,30 +293,30 @@ Navigation Menu
 Sections General
 --------------------------------------------------------------*/
 section:not(:last-child) {
-  padding: 60px 0 0 0;
-  margin-block: 20px;
+  padding-top: var(--spacing-60);
+  margin-block: var(--spacing-20);
 }
 
 section:last-child {
-  padding: 60px 0 0 0;
-  margin-top: 20px;
+  padding-top: var(--spacing-60);
+  margin-top: var(--spacing-20);
 }
 
 .section-bg {
-  background: #e7dede;
+  background: var(--color-section-bg);
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: var(--spacing-30);
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: var(--fs-30);
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: var(--spacing-20);
+  padding-bottom: var(--spacing-20);
   position: relative;
-  color: #c90a14;
+  color: var(--color-red-primary);
 }
 
 .section-title h2::after {
@@ -323,7 +325,7 @@ section:last-child {
   display: block;
   width: 50px;
   height: 3px;
-  background: #c90a14;
+  background: var(--color-red-primary);
   bottom: 0;
   left: 0;
 }
@@ -334,8 +336,8 @@ section:last-child {
 
 @media (min-width: 980px) {
   section {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
+    padding-right: var(--spacing-20);
+    padding-left: var(--spacing-20);
   }
 }
 
@@ -343,9 +345,9 @@ section:last-child {
 Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
-  color: #fffbfb;
-  font-size: 14px;
+  padding: var(--spacing-10);
+  color: var(--color-white);
+  font-size: var(--fs-14);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -353,7 +355,7 @@ Footer
   transition: all ease-in-out 0.5s;
   z-index: 99;
   transition: all 0.5s;
-  background: #2d2c2c;  
+  background: var(--color-black);  
   overflow-y: auto;
 }
 
@@ -362,7 +364,7 @@ Footer
 }
 
 #footer .copyright span {
-  color: #c90a14;
+  color: var(--color-red-primary);
 }
 
 @media (max-width: 1199px) {
