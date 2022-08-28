@@ -31,6 +31,7 @@ About
 }
 
 .about .content h3 {
+    margin-top: var(--spacing-40);
     font-weight: bold;
     font-size: var(--fs-26);
     color: var(--color-red-primary);
@@ -138,6 +139,15 @@ About
 /*--------------------------------------------------------------
 Skills
 --------------------------------------------------------------*/
+.skills {
+    margin-inline: 0;
+}
+
+.skills-content .auto-stretch {
+    width: 50%;
+    margin-top: var(--spacing-10);
+}
+
 .skills .progress {
     height: 60px;
     display: block;
@@ -170,6 +180,13 @@ Skills
     height: 10px;
     transition: 0.5s;
     background-color: var(--color-red-secondary);
+}
+
+@media (max-width: 800px) {
+    .skills-content .auto-stretch {
+        width: 100%;
+        margin-top: var(--spacing-20);
+    }
 }
   
 /*--------------------------------------------------------------
