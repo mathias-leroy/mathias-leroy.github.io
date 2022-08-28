@@ -292,22 +292,16 @@ Navigation Menu
 /*--------------------------------------------------------------
 Sections General
 --------------------------------------------------------------*/
-section:not(:last-child) {
-  padding-top: var(--spacing-60);
-  margin-block: var(--spacing-20);
-}
-
-section:last-child {
-  padding-top: var(--spacing-60);
-  margin-top: var(--spacing-20);
+section {
+  padding-block: var(--spacing-60);
 }
 
 .section-bg {
   background: var(--color-section-bg);
 }
 
-.section-title {
-  padding-bottom: var(--spacing-30);
+.section-title:not(:first-child) {
+  margin-top: var(--spacing-60);
 }
 
 .section-title h2 {
@@ -369,10 +363,12 @@ Footer
 
 @media (max-width: 1199px) {
   #footer {
-    left: -300px;
+    display: none;
   }
+}
 
-  #footer .copyright {
+@media (max-height: 700px ) {
+  #footer {
     display: none;
   }
 }
