@@ -1,11 +1,9 @@
-body, html{
-    margin: 0;
-    box-sizing: border-box;
+html {
     background: var(--color-white);
 }
 
 .page404 {
-    background:var(--color-white);
+    background: var(--color-white);
     font-family: var(--ff-secondary);
     margin-top: var(--spacing-20);
     display: flex;
@@ -23,6 +21,13 @@ body, html{
     font-family: var(--ff-secondary);
     letter-spacing: 1px;
     text-decoration: none;
+}
+
+.page404_bg_area {
+    background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: darken;
 }
 
 .link_404 {      
@@ -59,11 +64,7 @@ body, html{
     }
 
     .page404_bg_area {
-        background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
-        background-repeat: no-repeat;
         height: 500px;
-        background-position: center;
-        mix-blend-mode: darken;
     }
 
     .link_404 {
@@ -85,10 +86,7 @@ body, html{
     }
 
     .page404_bg_area {
-        background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
-        background-repeat: no-repeat;
         height: 400px;
-        background-position: center;
     }
 }
     
@@ -106,9 +104,6 @@ body, html{
     }
 
     .page404_bg_area {
-        background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
-        background-repeat: no-repeat;
         height: 400px;
-        background-position: center;
     }
 }

@@ -118,6 +118,12 @@ Articles
   justify-content: center;
 }
 
+.article .article-item p {
+  margin-top: var(--spacing-20);
+  position: relative;
+  text-align: justify;
+}
+
 .article .article-item .quote-icon-left {
   color: var(--color-red-primary);
   font-size: var(--fs-50);
@@ -150,9 +156,6 @@ Articles
 
   .article .article-item p {
     margin-right: var(--spacing-20);
-    padding-block: var(--spacing-20);
-    position: relative;
-    text-align: justify;
   }
   
   /* Time Break */
@@ -175,13 +178,6 @@ Articles
     width: clamp(70vw, 800px, 80vw);
     text-align: center;
     margin-right: var(--spacing-20);
-  }
-
-  .article .article-item p {
-    margin: 0;
-    padding-block: var(--spacing-20);
-    position: relative;
-    text-align: justify;
   }
 
   /* Time Break */
@@ -220,13 +216,6 @@ Articles
   .article .article-item {
     text-align: center;
     width: clamp(70vw, 650px, 75vw);
-  }
-
-  .article .article-item p {
-    margin: 0;
-    padding-block: var(--spacing-20);
-    position: relative;
-    text-align: justify;
   }
 
   /* Time Break */

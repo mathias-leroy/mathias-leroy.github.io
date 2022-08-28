@@ -175,12 +175,9 @@ Skills
 /*--------------------------------------------------------------
 Resume
 --------------------------------------------------------------*/
-.resume .container {
-    padding-bottom: var(--spacing-40);
-}
-
 .resume .section-title{
     text-align: justify;
+    margin-bottom: var(--spacing-20);
 }
 
 .resume .cv{
