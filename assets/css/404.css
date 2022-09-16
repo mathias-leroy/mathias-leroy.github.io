@@ -21,6 +21,8 @@ html {
     font-family: var(--ff-secondary);
     letter-spacing: 1px;
     text-decoration: none;
+    padding-inline: var(--spacing-20);
+    padding-block: var(--spacing-10);
 }
 
 .page404_bg_area {
