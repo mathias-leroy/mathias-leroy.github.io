@@ -21,8 +21,6 @@ html {
     font-family: var(--ff-secondary);
     letter-spacing: 1px;
     text-decoration: none;
-    padding-inline: var(--spacing-20);
-    padding-block: var(--spacing-10);
 }
 
 .page404_bg_area {
@@ -34,8 +32,8 @@ html {
 
 .link_404 {      
     color: var(--color-white);
-    padding-top: var(--spacing-10);
-    padding-left: var(--spacing-20);
+    padding-inline: var(--spacing-20);
+    padding-block: var(--spacing-10);
     border-radius: var(--spacing-10);
     font-weight: bold;
     text-transform: uppercase;
