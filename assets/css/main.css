@@ -52,6 +52,7 @@ p {
 * .section-title {
   margin-left: var(--spacing-30);
   margin-right: var(--spacing-20);
+  margin-bottom:var(--spacing-20);
 }
 
 [class*="bx-"] {
