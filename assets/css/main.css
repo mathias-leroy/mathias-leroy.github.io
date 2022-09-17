@@ -11,12 +11,17 @@ body {
   color: var(--color-black-sidebar);
   overflow-x: hidden;
 }
-  
+
+*:focus {
+  outline: none;
+}
+
 main {
   margin-left: var(--spacing-300);
 }
   
-a, a:hover {
+a,
+a:hover {
   color: var(--color-red-primary);
   text-decoration: none;
 }
@@ -57,6 +62,55 @@ p {
   font-size: var(--fs-26);
   margin-right: var(--spacing-10);
 }
+
+/* redirection link in text */
+@media (min-width: 800px) {
+  .redirect-link {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    color: var(--color-red-primary);
+  }
+
+  .redirect-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-red-primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .redirect-link:hover:after,
+  .redirect-link:focus:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@media (max-width: 799px) {
+  .redirect-link {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    color: var(--color-red-primary);
+  }
+
+  .redirect-link:after,
+  .redirect-link:focus:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-red-primary);
+  }
+}
   
 /*--------------------------------------------------------------
 Back to top button
@@ -81,7 +135,8 @@ Back to top button
   line-height: 0;
 }
 
-.back-to-top:hover {
+.back-to-top:hover,
+.back-to-top:focus {
   background: var(--color-red-primary);
   color: var(--color-white);
 }
@@ -156,7 +211,7 @@ Header
   height: fit-content;
 }
 
-#header .profile .social-links a:hover {
+#header .profile .social-links :is(a:hover, a:focus) {
   background: var(--color-red-primary);
   color: var(--color-white);
   text-decoration: none;
@@ -193,8 +248,7 @@ Navigation Menu
   white-space: nowrap;
 }
 
-.nav-menu .nav-link, 
-.nav-menu .nav-link:focus {
+.nav-menu .nav-link {
   display: flex;
   align-items: center;
   color: var(--color-grey);
@@ -215,21 +269,23 @@ Navigation Menu
   color: var(--color-grey);
 }
 
-.nav-menu .current span,
-.nav-menu .current:focus span,
-.nav-menu .nav-link:hover span,
-.nav-menu li:hover > .nav-link span {
+.nav-menu .current span:not(.bx),
+.nav-menu .nav-link:hover span:not(.bx),
+.nav-menu li:hover > .nav-link span:not(.bx) {
   color: var(--color-white);
   text-decoration: underline;
   text-underline-offset: 6px;
 }
 
-.nav-menu .nav-link:hover .bx,
-.nav-menu .current .bx,
-.nav-menu .current:focus .bx,
-.nav-menu li:hover > .nav-link .bx {
+.nav-menu .nav-link:focus span:not(.bx) {
   color: var(--color-red-primary);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.nav-menu li:hover > .nav-link .bx,
+.nav-menu .current .bx {
+  color: var(--color-red-primary);
 }
 
 /* Mobile Navigation */

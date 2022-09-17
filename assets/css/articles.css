@@ -1,9 +1,17 @@
 /*--------------------------------------------------------------
 Articles (Home)
 --------------------------------------------------------------*/ 
+.cards {
+  margin-top: var(--spacing-40);
+}
+
 .card {
   border: 2px solid var(--color-black);
   border-radius: var(--br-10);
+}
+
+.card:hover {
+  border: 2px solid var(--color-red-primary);
 }
 
 .card-body {
@@ -22,6 +30,11 @@ Articles (Home)
   color: var(--color-black);
   font-weight: bold;
   justify-content: center;
+}
+
+.card:hover .card-title {
+  color: var(--color-red-primary);
+  font-weight: bold;
 }
 
 .card-date {
@@ -45,45 +58,22 @@ Articles (Home)
   margin-inline: auto;
 }
 
+.btn-articles:hover,
+.btn-articles:focus {
+  background: var(--color-red-primary);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 @media (min-width: 1200px) {
   .card {
-    width: 40vh;
-  }
-
-  .card:hover {
-    border: 2px solid var(--color-red-primary);
-  }
-  
-  .card:hover .card-title {
-    color: var(--color-red-primary);
-    font-weight: bold;
-  }
-
-  .btn-articles:hover {
-    background: var(--color-red-primary);
-    color: var(--color-white);
-    text-decoration: none;
+    width: max(15vw, 250px);
   }
 }
   
 @media (min-width: 800px) and (max-width: 1199px) {
   .card {
-    width: 40vh;
-  }
-
-  .card:hover {
-    border: 2px solid var(--color-red-primary);
-  }
-  
-  .card:hover .card-title {
-    color: var(--color-red-primary);
-    font-weight: bold;
-  }
-
-  .btn-articles:hover {
-    background: var(--color-red-primary);
-    color: var(--color-white);
-    text-decoration: none;
+    width: max(20vw, 250px);
   }
 }
 
@@ -246,53 +236,6 @@ Articles
   .article-item :is(.img-repas, .img-poney, .img-symboles, .img-medaille){
     width: clamp(80vw, 300px, 82vw);
     min-width: 250px;
-  }
-}
-
-/* Jest vs Vitest */
-@media (min-width: 800px) {
-  .documentation-link {
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    color: var(--color-red-primary);
-  }
-
-  .documentation-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-red-primary);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .documentation-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-}
-
-@media (max-width: 799px) {
-  .documentation-link {
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    color: var(--color-red-primary);
-  }
-
-  .documentation-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-red-primary);
   }
 }
 
@@ -703,52 +646,6 @@ Articles
   margin-top: var(--spacing-20);
 }
 
-@media (min-width: 800px) {
-  .compatibility-link {
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    color: var(--color-red-primary);
-  }
-
-  .compatibility-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-red-primary);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .compatibility-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-}
-
-@media (max-width: 799px) {
-  .compatibility-link {
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    color: var(--color-red-primary);
-  }
-
-  .compatibility-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-red-primary);
-  }
-}
-
 /*--------------------------------------------------------------
 Articles Navigation
 --------------------------------------------------------------*/
@@ -808,7 +705,8 @@ Articles Navigation
   transition: transform 0.25s ease-out;
 }
 
-.article-navigation ul li .nav-article:hover:after {
+.article-navigation ul li .nav-article:hover:after,
+.article-navigation ul li .nav-article:focus:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

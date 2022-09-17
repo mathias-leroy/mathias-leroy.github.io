@@ -83,7 +83,7 @@ About
     transition: 0.2s;
 }
   
-.about .social-links a:hover {
+.about .social-links :is(a:hover, a:focus) {
     background: var(--color-red-primary);
     color: var(--color-white);
     text-decoration: none;
@@ -209,7 +209,7 @@ Resume
     justify-content: center;
 }
 
-.resume .cv:hover {
+.resume :is(.cv:hover, .cv:focus) {
     background: var(--color-red-primary);
     color: var(--color-white);
     text-decoration: none;
